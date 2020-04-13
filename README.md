@@ -13,6 +13,7 @@ Coronavirus Disease 2019 (COVID-19) spread globally in early 2020, causing the w
 ## Results
 
 ## Paper list (update continue)
+https://github.com/HzFu/COVID19_imaging_AI_paper_list
 
 ## Manuscript
 

@@ -13,11 +13,13 @@ Figure 3. Example of COVID-19 infected regions in CT axial slice, where the red 
 respectively. The images are collected from [1].
 [1] COVID-19 CT segmentation dataset, link: https://medicalsegmentation.com/covid19/, accessed: 2020-04-11.
 ## Pre-trained Model
-
+coming soon
 
 ## Training set
+coming soon
 
 ## Testing set
+coming soon
 
 ## Results
 ![alt text](./InfectionSeg.png)<br>

@@ -16,7 +16,9 @@ respectively. The images are collected from [1].
 
 ## Results
 ![alt text](./InfectionSeg.png)<br>
+Figure 2. Visual comparison of lung infection segmentation results.
 ![alt text](./MultiClassInfectionSeg.png)<br>
+Figure 3. Visual comparison of multi-class lung infection segmentation results, where the red and green labels indicate the GGO and consolidation, respectively.
 
 ## Paper list (update continue)
 https://github.com/HzFu/COVID19_imaging_AI_paper_list

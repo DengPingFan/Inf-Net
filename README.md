@@ -15,6 +15,8 @@ respectively. The images are collected from [1].
 ## Testing set
 
 ## Results
+![alt text](./InfectionSeg.png)<br>
+![alt text](./MultiClassInfectionSeg.png)<br>
 
 ## Paper list (update continue)
 https://github.com/HzFu/COVID19_imaging_AI_paper_list

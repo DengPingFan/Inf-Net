@@ -1,5 +1,6 @@
 # Inf-Net
 code for "Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans" submit to TMI20.
+![alt text](./Inf-Net.png)<br>
 
 ## Task Description
 ![alt text](./COVID'19-Infection.png)<br>

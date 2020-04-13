@@ -20,10 +20,10 @@ https://github.com/HzFu/COVID19_imaging_AI_paper_list
 ## Citation
 Please cite our paper if you find the work useful: 
 
-	@inproceedings{fan2020InfNet,
+	@article{fan2020InfNet,
   	title={Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans},
   	author={Fan, Deng-Ping and Zhou, Tao and Ji, Ge-Peng and Zhou, Yi and Chen, Geng and Fu, Huazhu and Shen, Jianbing and Shao, Ling},
-  	booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  	Journal = {arXiv},
   	year={2020}
 	}
   

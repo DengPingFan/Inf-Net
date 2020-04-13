@@ -16,6 +16,7 @@ Coronavirus Disease 2019 (COVID-19) spread globally in early 2020, causing the w
 https://github.com/HzFu/COVID19_imaging_AI_paper_list
 
 ## Manuscript
+http://dpfan.net/wp-content/uploads/2020TMISubmissionInfNet.pdf
 
 ## Citation
 Please cite our paper if you find the work useful: 

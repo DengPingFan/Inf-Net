@@ -12,8 +12,8 @@ Coronavirus Disease 2019 (COVID-19) spread globally in early 2020, causing the w
 
 ## Results
 
+## Paper list (update continue)
 
-
-## Draft
+## Manuscript
 
 coming soon.

@@ -7,7 +7,7 @@ code for "Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans"
 Figure 1. Example of COVID-19 infected regions in CT axial slice, where the red and green masks denote the ground-glass opacity (GGO) and consolidation,
 respectively. The images are collected from [1].
 [1] COVID-19 CT segmentation dataset, link: https://medicalsegmentation.com/covid19/, accessed: 2020-04-11.
-## Abstract
+## Pre-trained Model
 
 
 ## Training set

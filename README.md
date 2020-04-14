@@ -20,10 +20,13 @@ Lung infection:<br>
 Multi-Class lung infection:
 
 ## Testing set
-Lung infection segmentation results: http://dpfan.net/wp-content/uploads/Lung-infection-segmentation.zip <br>
-Multi-class lung infection segmentation: http://dpfan.net/wp-content/uploads/Multi-class-lung-infection-segmentation.zip
+
 
 ## Results
+# Download link: <br>
+Lung infection segmentation results: http://dpfan.net/wp-content/uploads/Lung-infection-segmentation.zip <br>
+Multi-class lung infection segmentation: http://dpfan.net/wp-content/uploads/Multi-class-lung-infection-segmentation.zip
+# Visualization Results: <br>
 ![alt text](./InfectionSeg.png)<br>
 Figure 4. Visual comparison of lung infection segmentation results.
 ![alt text](./MultiClassInfectionSeg.png)<br>

@@ -3,18 +3,22 @@ code for "Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans"
 ![alt text](./Inf-Net.png)<br>
 Figure 1. The architecture of our proposed Inf-Net model, which consists of three reverse attention (RA) modules connected to the paralleled partial decoder (PPD).
 
-## Semi-Inf-Net
+# Semi-Inf-Net
 ![alt text](./Semi-InfNet.png)<br>
 Figure 2. Overview of the proposed Semi-supervised Inf-Net framework.
 
-## Task Description
+# Task Description
 ![alt text](./COVID'19-Infection.png)<br>
 Figure 3. Example of COVID-19 infected regions in CT axial slice, where the red and green masks denote the ground-glass opacity (GGO) and consolidation,
 respectively. The images are collected from [1].
 [1] COVID-19 CT segmentation dataset, link: https://medicalsegmentation.com/covid19/, accessed: 2020-04-11.
-## Pre-trained Model
+# Pre-trained Model
 coming soon
 
+# COVID-SemiSeg Dataset
+We also build a semi-supervised COVID-19 infection segmentation (COVID-SemiSeg) dataset, with 100 labeled CT scans from the COVID-19 CT Segmentation dataset [1] and 1600 unlabeled images from the COVID-19 CT Collection dataset [2]. <br>
+[1]“COVID-19 CT segmentation dataset,” https://medicalsegmentation.com/covid19/, accessed: 2020-04-11. <br>
+[2]J. P. Cohen, P. Morrison, and L. Dao, “COVID-19 image data collection,” arXiv, 2020.<br>
 ## Training set
 Lung infection:<br>
 Multi-Class lung infection:
@@ -22,23 +26,23 @@ Multi-Class lung infection:
 ## Testing set
 
 
-## Results
-# Download link: <br>
+# Results
+## Download link: <br>
 Lung infection segmentation results: http://dpfan.net/wp-content/uploads/Lung-infection-segmentation.zip <br>
 Multi-class lung infection segmentation: http://dpfan.net/wp-content/uploads/Multi-class-lung-infection-segmentation.zip
-# Visualization Results: <br>
+## Visualization Results: <br>
 ![alt text](./InfectionSeg.png)<br>
 Figure 4. Visual comparison of lung infection segmentation results.
 ![alt text](./MultiClassInfectionSeg.png)<br>
 Figure 5. Visual comparison of multi-class lung infection segmentation results, where the red and green labels indicate the GGO and consolidation, respectively.
 
-## Paper list (update continue)
+# Paper list (update continue)
 https://github.com/HzFu/COVID19_imaging_AI_paper_list
 
-## Manuscript
+# Manuscript
 http://dpfan.net/wp-content/uploads/2020TMISubmissionInfNet.pdf
 
-## Citation
+# Citation
 Please cite our paper if you find the work useful: 
 
 	@article{fan2020InfNet,

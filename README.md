@@ -19,7 +19,8 @@ coming soon
 coming soon
 
 ## Testing set
-coming soon
+Lung infection segmentation results:
+
 
 ## Results
 ![alt text](./InfectionSeg.png)<br>

@@ -16,7 +16,8 @@ respectively. The images are collected from [1].
 coming soon
 
 ## Training set
-coming soon
+Lung infection:<br>
+Multi-Class lung infection:
 
 ## Testing set
 Lung infection segmentation results: http://dpfan.net/wp-content/uploads/Lung-infection-segmentation.zip <br>

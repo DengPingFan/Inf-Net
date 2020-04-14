@@ -20,7 +20,7 @@ coming soon
 
 ## Testing set
 Lung infection segmentation results: http://dpfan.net/wp-content/uploads/Lung-infection-segmentation.zip
-
+Multi-class lung infection segmentation: http://dpfan.net/wp-content/uploads/Multi-class-lung-infection-segmentation.zip
 
 ## Results
 ![alt text](./InfectionSeg.png)<br>

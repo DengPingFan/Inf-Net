@@ -19,6 +19,8 @@ coming soon
 We also build a semi-supervised COVID-19 infection segmentation (COVID-SemiSeg) dataset, with 100 labeled CT scans from the COVID-19 CT Segmentation dataset [1] and 1600 unlabeled images from the COVID-19 CT Collection dataset [2]. <br>
 [1]“COVID-19 CT segmentation dataset,” https://medicalsegmentation.com/covid19/, accessed: 2020-04-11. <br>
 [2]J. P. Cohen, P. Morrison, and L. Dao, “COVID-19 image data collection,” arXiv, 2020.<br>
+Our COVID-SemiSeg Dataset can be downloaded at google drive: <br>
+https://drive.google.com/open?id=1bbKAqUuk7Y1q3xsDSwP07oOXN_GL3SQM <br>
 ## Training set
 1. Lung infection which consists of 50 labels by doctors (Doctor-label) and 1600 pesudo labels generated (Pesudo-label) by our Semi-Inf-Net model.<br>
 Download: http://dpfan.net/wp-content/uploads/LungInfection-Train.zip <br>

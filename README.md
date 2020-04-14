@@ -19,7 +19,7 @@ coming soon
 coming soon
 
 ## Testing set
-Lung infection segmentation results:
+Lung infection segmentation results: http://dpfan.net/wp-content/uploads/Lung-infection-segmentation.zip
 
 
 ## Results

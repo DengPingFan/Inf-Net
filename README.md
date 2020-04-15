@@ -17,7 +17,7 @@ coming soon
 
 # Evaluation Tool
 Google Drive: https://drive.google.com/open?id=1BGUUmrRPOWPxdxnawFnG9TVZd8rwLqCF <br>
-or
+or <br>
 Other link: 
 
 # COVID-SemiSeg Dataset

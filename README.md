@@ -9,8 +9,7 @@ Figure 2. Overview of the proposed Semi-supervised Inf-Net framework.
 
 # Task Description
 ![alt text](./COVID'19-Infection.png)<br>
-Figure 3. Example of COVID-19 infected regions in CT axial slice, where the red and green masks denote the ground-glass opacity (GGO) and consolidation,
-respectively. The images are collected from [1].
+Figure 3. Example of COVID-19 infected regions in CT axial slice, where the red and green masks denote the ground-glass opacity (GGO) and consolidation, respectively. The images are collected from [1]. <br>
 [1] COVID-19 CT segmentation dataset, link: https://medicalsegmentation.com/covid19/, accessed: 2020-04-11.
 # Pre-trained Model
 coming soon
@@ -23,7 +22,8 @@ Other link:
 # COVID-SemiSeg Dataset
 We also build a semi-supervised COVID-19 infection segmentation (COVID-SemiSeg) dataset, with 100 labeled CT scans from the COVID-19 CT Segmentation dataset [1] and 1600 unlabeled images from the COVID-19 CT Collection dataset [2]. <br>
 [1]“COVID-19 CT segmentation dataset,” https://medicalsegmentation.com/covid19/, accessed: 2020-04-11. <br>
-[2]J. P. Cohen, P. Morrison, and L. Dao, “COVID-19 image data collection,” arXiv, 2020.<br>
+[2]J. P. Cohen, P. Morrison, and L. Dao, “COVID-19 image data collection,” arXiv, 2020.<br> <br>
+
 Our COVID-SemiSeg Dataset can be downloaded at google drive: <br>
 https://drive.google.com/open?id=1bbKAqUuk7Y1q3xsDSwP07oOXN_GL3SQM <br>
 ## Training set

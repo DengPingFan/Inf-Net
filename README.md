@@ -1,5 +1,6 @@
 # Inf-Net
-code for "Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans" submit to TMI20.
+code for "Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans" submit to TMI20. <br> 
+Author: Deng-Ping Fan, Tao Zhou, Ge-Peng Ji, Yi Zhou, Geng Chen, Huazhu Fu, Jianbing Shen, and Ling Shao <br>
 ![alt text](./Inf-Net.png)<br>
 Figure 1. The architecture of our proposed Inf-Net model, which consists of three reverse attention (RA) modules connected to the paralleled partial decoder (PPD).
 

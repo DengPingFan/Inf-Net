@@ -17,8 +17,6 @@ coming soon
 
 # Evaluation Tool
 Google Drive: https://drive.google.com/open?id=1BGUUmrRPOWPxdxnawFnG9TVZd8rwLqCF <br>
-or <br>
-Other link: 
 
 # COVID-SemiSeg Dataset
 We also build a semi-supervised COVID-19 infection segmentation (COVID-SemiSeg) dataset, with 100 labeled CT scans from the COVID-19 CT Segmentation dataset [1] and 1600 unlabeled images from the COVID-19 CT Collection dataset [2]. <br>

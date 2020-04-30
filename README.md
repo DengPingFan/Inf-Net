@@ -60,7 +60,7 @@ Please cite our paper if you find the work useful:
 	@article{fan2020InfNet,
   	title={Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans},
   	author={Fan, Deng-Ping and Zhou, Tao and Ji, Ge-Peng and Zhou, Yi and Chen, Geng and Fu, Huazhu and Shen, Jianbing and Shao, Ling},
-  	Journal = {arXiv},
+  	journal={arXiv preprint arXiv:2004.14133},
   	year={2020}
 	}
   

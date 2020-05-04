@@ -1,6 +1,6 @@
 # Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans
 
-> Authors: 
+> **Authors:** 
 > [Deng-Ping Fan](https://dpfan.net/), 
 > [Tao Zhou](https://taozh2017.github.io/), 
 > Ge-Peng Ji, 
@@ -10,7 +10,7 @@
 > [Jianbing Shen](http://iitlab.bit.edu.cn/mcislab/~shenjianbing), and 
 > [Ling Shao](http://www.inceptioniai.org/).
 
-- This repository provides code for "Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans" submit to TMI-2020. 
+- This repository provides code for "_**Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans**_" submit to TMI-2020. 
 ([arXiv Pre-print](https://arxiv.org/abs/2004.14133) & [medrXiv](https://www.medrxiv.org/content/10.1101/2020.04.22.20074948v1))
 
 - Any quesetions please contact to [Deng-Ping Fan](dengpfan@gmail.com) via E-mail.
@@ -37,7 +37,7 @@ Our proposed methods consist of three individual components under different sett
 
 - Semi-Inf-Net (Semi-supervised learning with doctor label and pseudo label)
 
-- Semi-Inf-Net + FCN8s (Multi-class segmentation, including Background, Ground-glass opacities, and Consolidation).
+- Semi-Inf-Net + FCN8s/UNet (Extension to Multi-class Segmentation, including Background, Ground-glass opacities, and Consolidation).
 
 ### 2.1. Inf-Net
 

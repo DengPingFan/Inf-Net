@@ -175,4 +175,4 @@ Please cite our paper if you find the work useful:
  
  ## 9. Acknowledgements
  
- We thanks xxx for their contributions.
+ We thanks [xxx]() for their contributions.

@@ -59,8 +59,6 @@ please cite this paper ([BibTeX](#8-citation)).
 - [2020/05/12] Release training/testing/evaluation code. (Updated by Ge-Peng Ji)
 
 
-
-
 ## 1. Introduction
 
 ### 1.1. Task Description
@@ -125,9 +123,8 @@ please cite this paper ([BibTeX](#8-citation)).
 
 1. Train
 
-    - Add your in `MyTrain_LungInf.py`, and turn off the semi-supervised mode in the parser (`--is_semi=False`)
-
-    - Just run it!
+    - Turn off the semi-supervised mode (`--is_semi=False`) turn off the flag of whether use pseudo labels
+     (`--is_pseudo=False`) in the parser of `MyTrain_LungInf.py` and just run it!
 
 1. Test
     
@@ -169,6 +166,27 @@ please cite this paper ([BibTeX](#8-citation)).
     
     - When training is completed, the images with pseudo labels will be saved in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/`.
 
+1. Train
+
+    - Firstly, turn off the semi-supervised mode (`--is_semi=False`) and turn on the flag of whether use pseudo labels
+     (`--is_pseudo=True`) in the parser of `MyTrain_LungInf.py` and modify the path train data to the pesudo-label 
+     repository (`--train_path='Dataset/TrainingSet/LungInfection-Train/Pseudo-label'`). Just run it.
+    
+    - When training is completed, the weights (trained on pseudo-label) will be saved in `./Snapshots/save_weights/Inf-Net/`. 
+    You also can directly download the pre-trained weights from [Google Drive]().
+    
+    - Secondly, turn on the semi-supervised mode (`--is_semi=True`) and turn off the flag of whether use pseudo labels
+     (`--is_pseudo=False`) in the parser of `MyTrain_LungInf.py` and modify the path train data to the doctor-label 
+     repository (`--train_path='Dataset/TrainingSet/LungInfection-Train/Doctor-label'`). Just run it.
+
+1. Test
+    
+    - When training is completed, the weights will be saved in `./Snapshots/save_weights/Semi-Inf-Net/`. 
+    You also can directly download the pre-trained weights from [Google Drive]().
+    
+    - Assign the path `--pth_path` of trained weights and `--save_path` of results save and in `MyTest_LungInf.py`.
+    
+    - Just run it and results will be saved in `./Results/Lung infection segmentation/Semi-Inf-Net`
 
 ### 2.3. Semi-Inf-Net + Multi-class UNet
 
@@ -176,6 +194,13 @@ please cite this paper ([BibTeX](#8-citation)).
 
 We modify the original design of UNet that is used for binary segmentation, and thus, we name it as _Multi-class UNet_. 
 More details can be found in our paper.
+
+<p align="center">
+    <img src="Imgs/MultiClassExtension.png"/> <br />
+    <em> 
+    Figure 3. Overview of the proposed Semi-supervised Inf-Net framework.
+    </em>
+</p>
 
 #### 2.3.2. Usage
 

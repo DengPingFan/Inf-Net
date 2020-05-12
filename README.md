@@ -16,8 +16,8 @@
 ([arXiv Pre-print](https://arxiv.org/abs/2004.14133) & [medrXiv](https://www.medrxiv.org/content/10.1101/2020.04.22.20074948v1))
 
 - If you have any questions about our paper, feel free to contact [Deng-Ping Fan](dengpfan@gmail.com) 
-or [Ge-Peng Ji](gepengai.ji@gmail.com) via E-mail. And if you are using SINet or evaluation toolbox for your research, 
-please cite this paper ([BibTeX]()).
+or [Ge-Peng Ji](gepengai.ji@gmail.com) via E-mail. And if you are using COVID-SemiSeg Dataset, Inf-Net or evaluation toolbox for your research, 
+please cite this paper ([BibTeX](#8-citation)).
 
 ### 0.1. Table of Contents
 

@@ -16,8 +16,8 @@
 ([arXiv Pre-print](https://arxiv.org/abs/2004.14133) & [medrXiv](https://www.medrxiv.org/content/10.1101/2020.04.22.20074948v1))
 
 - If you have any questions about our paper, feel free to contact [Deng-Ping Fan](dengpfan@gmail.com) 
-or [Ge-Peng Ji](gepengai.ji@gmail.com) via E-mail. And if you are using COVID-SemiSeg Dataset, Inf-Net or evaluation toolbox for your research, 
-please cite this paper ([BibTeX](#8-citation)).
+or [Ge-Peng Ji](gepengai.ji@gmail.com) via E-mail. And if you are using COVID-SemiSeg Dataset, 
+Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX](#8-citation)).
 
 ### 0.1. Table of Contents
 
@@ -55,6 +55,8 @@ please cite this paper ([BibTeX](#8-citation)).
   * [12. FAQ](#12-faq)
 
 ### 0.2. NEWS
+
+- [2020/05/13] 
 
 - [2020/05/12] Release training/testing/evaluation code. (Updated by Ge-Peng Ji)
 
@@ -167,7 +169,11 @@ please cite this paper ([BibTeX](#8-citation)).
     - When training is completed, the images with pseudo labels will be saved in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/`.
 
 1. Train
-
+    
+    - Now we have prepare the weights (`Inf-Net_pseudo_99.pth`) that is pre-trained on 1600 images with pseudo labels. 
+    Note that these valuable images/labels can promote the performance and stability of training process, because of 
+    ImageNet pre-trained models are just design for general object classification/detection/segmentation tasks initially.
+    
     - Firstly, turn off the semi-supervised mode (`--is_semi=False`) and turn on the flag of whether use pseudo labels
      (`--is_pseudo=True`) in the parser of `MyTrain_LungInf.py` and modify the path train data to the pesudo-label 
      repository (`--train_path='Dataset/TrainingSet/LungInfection-Train/Pseudo-label'`). Just run it.
@@ -337,7 +343,7 @@ etc.)
 
 - [ ] Support distributed training.
 
-- [ ] Support lightweight architecture and real-time inference, like MobileNet, SqueezeNet.
+- [ ] Support lightweight architecture and faster inference, like MobileNet, SqueezeNet.
 
 - [ ] Support distributed training
 

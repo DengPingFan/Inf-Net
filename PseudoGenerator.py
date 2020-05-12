@@ -217,7 +217,7 @@ if __name__ == '__main__':
                      _train_save='semi_training/Semi-Inf-Net_{}'.format(i),
                      _resume_snapshot=snapshot_dir)
 
-    # move img/pseudo-label into
+    # move img/pseudo-label into `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label`
     shutil.copytree(semi_img, './Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Imgs')
     shutil.copytree(semi_mask, './Dataset/TrainingSet/LungInfection-Train/Pseudo-label/GT')
     shutil.copytree(semi_edge, 'Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Edge')

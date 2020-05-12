@@ -17,7 +17,7 @@ parser.add_argument('--save_path', type=str, default='./Results/Lung infection s
 opt = parser.parse_args()
 
 model = Network()
-# model = torch.nn.DataParallel(model, device_ids=[0, 1])
+# model = torch.nn.DataParallel(model, device_ids=[0, 1]) # uncomment it if you have multiply GPUs.
 model.load_state_dict(torch.load(opt.pth_path))
 model.cuda()
 model.eval()
@@ -38,24 +38,6 @@ for i in range(test_loader.size):
     res = F.upsample(res, size=gt.shape, mode='bilinear', align_corners=False)
     res = res.sigmoid().data.cpu().numpy().squeeze()
     res = (res - res.min()) / (res.max() - res.min() + 1e-8)
-    misc.imsave(opt.save_path+name, res)
+    misc.imsave(opt.save_path + name, res)
 
-
-# NOTES: calculate fps
-# model_lung_infection = PraNet().cuda().eval()
-# input_tensor = torch.randn(1, 3, 352, 352).cuda()
-# flops, params = profile(model_lung_infection, inputs=(input_tensor,))
-# flops, params = clever_format([flops, params], "%.3f")
-# print(flops, params)
-#
-#
-# t_total = 0
-#
-# for i in range(1000):
-#     start = time.time()
-#     res, _, _, _ = model_lung_infection(input_tensor)
-#     t_cur = time.time() - start
-#     print('[cur Time] {}, [cur FPS] {}'.format(t_cur, 1 / t_cur))
-#     t_total += t_cur
-#
-# print('[time] {} [FPS] {}'.format(t_total/1000, 1000/t_total))
+print('Test Done!')

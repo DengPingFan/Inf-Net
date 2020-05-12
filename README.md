@@ -13,7 +13,7 @@
 - This repository provides code for "_**Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans**_" submit to TMI-2020. 
 ([arXiv Pre-print](https://arxiv.org/abs/2004.14133) & [medrXiv](https://www.medrxiv.org/content/10.1101/2020.04.22.20074948v1))
 
-- Any questions please contact to [Deng-Ping Fan](dengpfan@gmail.com) via E-mail.
+- Any questions please contact to [Ge-Peng Ji](gepengai.ji@gmail.com) or [Deng-Ping Fan](dengpfan@gmail.com) via E-mail.
 
 ## 1. Introduction
 
@@ -77,13 +77,20 @@
 
 #### 2.1.2. Usage
 
-1. Add your in `MyTrain_LungInf.py`, and turn off the semi-supervised mode in the parser (`is_semi=False`)
+1. Train
 
-1. Just run it. When training is completed, the weights will be saved in `.
+    - Add your in `MyTrain_LungInf.py`, and turn off the semi-supervised mode in the parser (`--is_semi=False`)
 
-- Pre-trained Model
+    - Just run it!
 
-    Coming soon ...
+1. Test
+    
+    - When training is completed, the weights will be saved in `./Snapshots/save_weights/Inf-Net/`. 
+    You also can directly download the pre-trained weights from [Google Drive]().
+    
+    - Assign the path `--pth_path` of trained weights and `--save_path` of results save and in `MyTest_LungInf.py`.
+    
+    - Just run it and results will be saved in `./Results/Lung infection segmentation/Inf-Net`
 
 ### 2.2. Semi-Inf-Net
 
@@ -101,38 +108,34 @@
 1. Data Preparation (Optional)
     
     Dividing the unlabeled image into multiple groups (1600/5=320 groups), in which images with 
-    `*.jgp` formation can be downloaded from [Google Drive](). You should copy them into 
-    `../Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Split/Imgs`. Then you only just run the the code stored 
+    `*.jgp` format can be downloaded from [Google Drive](). You should copy them into 
+    `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Split/Imgs`. Then you only just run the the code stored 
     in `./SrcCode/utils/split_1600.py` to prepare sub-dataset used in the training process of pseudo-label generation. 
     **You can also skip this process and download them from [Google Drive]() that is used in our implementation.** 
     Note that all the images are stored in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Split/`
 
 1. Generating Pseudo Labels (Optional)
 
+    - run `PseudoGenerator.py`
+
+1. Train
+
+    - run `MyTrain_LungInf.py`
+
+1. Test
     
+    - When training is completed, the weights will be saved in `./Snapshots/save_weights/Semi-Inf-Net/`. 
+    You also can directly download the pre-trained weights from [Google Drive]().
+    
+    - run `MyTest_MulClsLungInf_UNet.py`
 
-Pre-trained Model
 
-    Coming soon ...
-
-### 2.3. Semi-Inf-Net + FCN8s
+### 2.3. Semi-Inf-Net + UNet
 
 #### 2.3.1. Overview
 
 
 #### 2.3.2. Usage
-
-- Pre-trained Model
-
-    Coming soon ...
-
-### 2.4. Semi-Inf-Net + UNet
-
-
-#### 2.4.1. Overview
-
-
-#### 2.4.2. Usage
 
 - Pre-trained Model
 

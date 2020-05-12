@@ -1,22 +1,25 @@
-import torch
-from torch.autograd import Variable
+# ---- base lib -----
 import os
 import argparse
 from datetime import datetime
-# Only provide Res2Net, you can also replace it with other backbones
+import cv2
+import numpy as np
+import random
+import shutil
+from scipy import misc
+# ---- torch lib ----
+import torch
+from torch.autograd import Variable
+import torch.nn.functional as F
+# ---- custom lib ----
+# NOTES: Here we nly provide Res2Net, you can also replace it with other backbones
 from Code.model_lung_infection.InfNet_Res2Net import PraNetPlusPlus as Network
 from Code.utils.dataloader_LungInf import get_loader, test_dataset
 from Code.utils.utils import clip_gradient, adjust_lr, AvgMeter
-import torch.nn.functional as F
-import numpy as np
-from scipy import misc
-import random
-import shutil
 from Code.utils.format_conversion import binary2edge
-import cv2
 
 
-def structure_loss(pred, mask):
+def joint_loss(pred, mask):
     weit = 1 + 5*torch.abs(F.avg_pool2d(mask, kernel_size=31, stride=1, padding=15) - mask)
     wbce = F.binary_cross_entropy_with_logits(pred, mask, reduce='none')
     wbce = (weit*wbce).sum(dim=(2, 3)) / weit.sum(dim=(2, 3))
@@ -51,10 +54,10 @@ def trainer(train_loader, model, optimizer, epoch, opt, total_step):
             # ---- forward ----
             lateral_map_5, lateral_map_4, lateral_map_3, lateral_map_2, lateral_edge = model(images)
             # ---- loss function ----
-            loss5 = structure_loss(lateral_map_5, gts)
-            loss4 = structure_loss(lateral_map_4, gts)
-            loss3 = structure_loss(lateral_map_3, gts)
-            loss2 = structure_loss(lateral_map_2, gts)
+            loss5 = joint_loss(lateral_map_5, gts)
+            loss4 = joint_loss(lateral_map_4, gts)
+            loss3 = joint_loss(lateral_map_3, gts)
+            loss2 = joint_loss(lateral_map_2, gts)
             loss1 = torch.nn.BCEWithLogitsLoss()(lateral_edge, edges)
             loss = loss1 + loss2 + loss3 + loss4 + loss5
             # ---- backward ----
@@ -161,7 +164,7 @@ if __name__ == '__main__':
     slices_pred_seg_dir = slices + '/pred_seg_split'
     slices_pred_edge_dir = slices + '/pred_edge_split'
 
-    # Hybrid-label = Doctor-label + Pseudo-label
+    # NOTES: Hybrid-label = Doctor-label + Pseudo-label
     semi = './Dataset/TrainingSet/LungInfection-Train/Pseudo-label/DataPrepare/Hybrid-label'
     semi_img = semi + '/Imgs'
     semi_mask = semi + '/GT'
@@ -180,6 +183,13 @@ if __name__ == '__main__':
 
     slices_lst = os.listdir(slices_dir)
     random.shuffle(slices_lst)
+
+    print("#" * 20, "\nStart Training (Inf-Net)\nThis code is written for 'Inf-Net: Automatic COVID-19 Lung "
+                    "Infection Segmentation from CT Scans', 2020, arXiv.\n"
+                    "----\nPlease cite the paper if you use this code and dataset. "
+                    "And any questions feel free to contact me "
+                    "via E-mail (gepengai.ji@163.com)\n----\n", "#" * 20)
+
     for i, split_name in enumerate(slices_lst):
         print('\n[INFO] {} ({}/320)'.format(split_name, i))
         # ---- inference ----
@@ -206,3 +216,9 @@ if __name__ == '__main__':
         train_module(_train_path=semi,
                      _train_save='semi_training/Semi-Inf-Net_{}'.format(i),
                      _resume_snapshot=snapshot_dir)
+
+    # move img/pseudo-label into
+    shutil.copytree(semi_img, './Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Imgs')
+    shutil.copytree(semi_mask, './Dataset/TrainingSet/LungInfection-Train/Pseudo-label/GT')
+    shutil.copytree(semi_edge, 'Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Edge')
+    print('Pseudo Label Generated!')

@@ -12,7 +12,7 @@ from Code.model_lung_infection.InfNet_UNet import *
 def train(epo_num, num_classes, input_channels, batch_size, lr, save_path):
     train_dataset = LungDataset(
         imgs_path='./Dataset/TrainingSet/MultiClassInfection-Train/Imgs/',
-        # prior is borrowed from the object-level label of train split
+        # NOTES: prior is borrowed from the object-level label of train split
         pseudo_path='./Dataset/TrainingSet/MultiClassInfection-Train/Prior/',
         label_path='./Dataset/TrainingSet/MultiClassInfection-Train/GT/',
         transform=transforms.Compose([
@@ -28,6 +28,12 @@ def train(epo_num, num_classes, input_channels, batch_size, lr, save_path):
 
     criterion = nn.BCELoss().to(device)
     optimizer = optim.SGD(lung_model.parameters(), lr=lr, momentum=0.7)
+
+    print("#" * 20, "\nStart Training (Inf-Net)\nThis code is written for 'Inf-Net: Automatic COVID-19 Lung "
+                    "Infection Segmentation from CT Scans', 2020, arXiv.\n"
+                    "----\nPlease cite the paper if you use this code and dataset. "
+                    "And any questions feel free to contact me "
+                    "via E-mail (gepengai.ji@163.com)\n----\n", "#" * 20)
 
     for epo in range(epo_num):
 

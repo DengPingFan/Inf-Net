@@ -77,6 +77,7 @@ def train(train_loader, model, optimizer, epoch, train_save):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    # hyper-parameters
     parser.add_argument('--epoch', type=int, default=100,
                         help='epoch number')
     parser.add_argument('--lr', type=float, default=1e-4,
@@ -161,7 +162,7 @@ if __name__ == '__main__':
                               batchsize=opt.batchsize, trainsize=opt.trainsize, num_workers=opt.num_workers)
     total_step = len(train_loader)
 
-    # ---- strat !! -----
+    # ---- start !! -----
     print("#"*20, "\nStart Training (Inf-Net-{})\n{}\nThis code is written for 'Inf-Net: Automatic COVID-19 Lung "
                   "Infection Segmentation from CT Scans', 2020, arXiv.\n"
                   "----\nPlease cite the paper if you use this code and dataset. "

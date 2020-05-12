@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="70645ccf-d112-42c5-b376-c6624bbb4cd6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTest_MulClsLungInf_UNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest_MulClsLungInf_UNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTest_LungInf.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest_LungInf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTrain_LungInf.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain_LungInf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyTrain_MulClsLungInf_UNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain_MulClsLungInf_UNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PseudoGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/PseudoGenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/COVID'19-Infection.png" beforeDir="false" afterPath="$PROJECT_DIR$/Imgs/COVID'19-Infection.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/Inf-Net.png" beforeDir="false" afterPath="$PROJECT_DIR$/Imgs/Inf-Net.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/InfectionSeg.png" beforeDir="false" afterPath="$PROJECT_DIR$/Imgs/InfectionSeg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/MultiClassInfectionSeg.png" beforeDir="false" afterPath="$PROJECT_DIR$/Imgs/MultiClassInfectionSeg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/Semi-InfNet.png" beforeDir="false" afterPath="$PROJECT_DIR$/Imgs/Semi-InfNet.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +105,7 @@
       <workItem from="1589250509980" duration="900000" />
       <workItem from="1589270206239" duration="3345000" />
       <workItem from="1589279493090" duration="1765000" />
-      <workItem from="1589284971335" duration="3419000" />
+      <workItem from="1589284971335" duration="7203000" />
     </task>
     <servers />
   </component>

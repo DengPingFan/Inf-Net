@@ -150,7 +150,7 @@ please cite this paper ([BibTeX](#8-citation)).
 
 1. Data Preparation (Optional)
     
-    - Dividing the 1600 unlabeled image into 320 groups (1600/5=320 groups, we set $K=5$ in our implementation), 
+    - Dividing the 1600 unlabeled image into 320 groups (1600/K groups, we set K=5 in our implementation), 
     in which images with `*.jgp` format can be downloaded from [Google Drive](). You should copy them into 
     `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/DataPrepare/Imgs/`. 
     Then you only just run the the code stored in `./SrcCode/utils/split_1600.py` to split it into multiple sub-dataset, 

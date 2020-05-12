@@ -31,7 +31,7 @@
 
 ## 2. Proposed Methods
 
-- Preview:
+- **Preview:**
 
     Our proposed methods consist of three individual components under three different settings: 
 
@@ -41,12 +41,12 @@
     
     - Semi-Inf-Net + Multi-Class UNet (Extended to Multi-class Segmentation, including Background, Ground-glass Opacities, and Consolidation).
    
-- Dataset Preparation:
+- **Dataset Preparation:**
 
     Firstly, you should download the testing/training set ([Google Drive Link](https://drive.google.com/open?id=1bbKAqUuk7Y1q3xsDSwP07oOXN_GL3SQM)) 
     and put it into `./Dataset/` repository.
 
-- Pretrained Model Download:
+- **Download the Pretrained Model:**
 
     ImageNet Pre-trained Models used in our paper (
     [VGGNet16](https://download.pytorch.org/models/vgg16-397923af.pth), 
@@ -54,7 +54,7 @@
     [Res2Net](https://shanghuagao.oss-cn-beijing.aliyuncs.com/res2net/res2net50_v1b_26w_4s-3cf99910.pth)), 
     and put them into `./Snapshots/pre_trained/` repository.
 
-- Configuring your environment (Prerequisites):
+- **Configuring your environment (Prerequisites):**
 
     Note that Inf-Net series is only tested on Ubuntu OS 16.04 with the following environments (CUDA-10.0). 
     It may work on other operating systems as well but we do not guarantee that it will.
@@ -133,7 +133,6 @@
 ### 2.3. Semi-Inf-Net + UNet
 
 #### 2.3.1. Overview
-
 
 #### 2.3.2. Usage
 

@@ -13,7 +13,7 @@
 - This repository provides code for "_**Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans**_" submit to TMI-2020. 
 ([arXiv Pre-print](https://arxiv.org/abs/2004.14133) & [medrXiv](https://www.medrxiv.org/content/10.1101/2020.04.22.20074948v1))
 
-- Any quesetions please contact to [Deng-Ping Fan](dengpfan@gmail.com) via E-mail.
+- Any questions please contact to [Deng-Ping Fan](dengpfan@gmail.com) via E-mail.
 
 ## 1. Introduction
 
@@ -31,13 +31,37 @@
 
 ## 2. Proposed Methods
 
-Our proposed methods consist of three individual components under different settings: 
+- Preview:
 
-- Inf-Net (Supervised Learning with segmentation and edge supervision).
+    Our proposed methods consist of three individual components under three different settings: 
 
-- Semi-Inf-Net (Semi-supervised learning with doctor label and pseudo label)
+    - Inf-Net (Supervised Learning with segmentation and edge supervision).
+    
+    - Semi-Inf-Net (Semi-supervised learning with doctor label and pseudo label)
+    
+    - Semi-Inf-Net + Multi-Class UNet (Extended to Multi-class Segmentation, including Background, Ground-glass Opacities, and Consolidation).
+   
+- Dataset Preparation:
 
-- Semi-Inf-Net + FCN8s/UNet (Extension to Multi-class Segmentation, including Background, Ground-glass opacities, and Consolidation).
+    Firstly, you should download the testing/training set ([Google Drive Link](https://drive.google.com/open?id=1bbKAqUuk7Y1q3xsDSwP07oOXN_GL3SQM)) 
+    and put it into `./Dataset/` repository.
+
+- Pretrained Model Download:
+
+    ImageNet Pre-trained Models used in our paper (
+    [VGGNet16](https://download.pytorch.org/models/vgg16-397923af.pth), 
+    [ResNet](https://download.pytorch.org/models/resnet50-19c8e357.pth), and 
+    [Res2Net](https://shanghuagao.oss-cn-beijing.aliyuncs.com/res2net/res2net50_v1b_26w_4s-3cf99910.pth)), 
+    and put them into `./Snapshots/pre_trained/` repository.
+
+- Configuring your environment (Prerequisites):
+
+    Note that Inf-Net series is only tested on Ubuntu OS 16.04 with the following environments (CUDA-10.0). 
+    It may work on other operating systems as well but we do not guarantee that it will.
+    
+    + Creating a virtual environment in terminal: `conda create -n SINet python=3.6`.
+    
+    + Installing necessary packages: `pip install -r requirements.txt`.
 
 ### 2.1. Inf-Net
 
@@ -52,6 +76,10 @@ Our proposed methods consist of three individual components under different sett
 </p>
 
 #### 2.1.2. Usage
+
+1. Add your in `MyTrain_LungInf.py`, and turn off the semi-supervised mode in the parser (`is_semi=False`)
+
+1. Just run it. When training is completed, the weights will be saved in `.
 
 - Pre-trained Model
 
@@ -70,7 +98,20 @@ Our proposed methods consist of three individual components under different sett
 
 #### 2.2.2. Usage
 
-- Pre-trained Model
+1. Data Preparation (Optional)
+    
+    Dividing the unlabeled image into multiple groups (1600/5=320 groups), in which images with 
+    `*.jgp` formation can be downloaded from [Google Drive](). You should copy them into 
+    `../Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Split/Imgs`. Then you only just run the the code stored 
+    in `./SrcCode/utils/split_1600.py` to prepare sub-dataset used in the training process of pseudo-label generation. 
+    **You can also skip this process and download them from [Google Drive]() that is used in our implementation.** 
+    Note that all the images are stored in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Split/`
+
+1. Generating Pseudo Labels (Optional)
+
+    
+
+Pre-trained Model
 
     Coming soon ...
 
@@ -80,6 +121,18 @@ Our proposed methods consist of three individual components under different sett
 
 
 #### 2.3.2. Usage
+
+- Pre-trained Model
+
+    Coming soon ...
+
+### 2.4. Semi-Inf-Net + UNet
+
+
+#### 2.4.1. Overview
+
+
+#### 2.4.2. Usage
 
 - Pre-trained Model
 

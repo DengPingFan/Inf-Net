@@ -1,6 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Evaluation tool boxs for 'Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans`
-%submit to Transactions on Medical Imaging2020.
+%Evaluation tool boxs for ��Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans�� submit to Transactions on Medical Imaging2020.
 %Author: Deng-Ping Fan, Tao Zhou, Ge-Peng Ji, Yi Zhou, Geng Chen, Huazhu Fu, Jianbing Shen, and Ling Shao
 %Homepage: http://dpfan.net/
 %Projectpage: https://github.com/DengPingFan/Inf-Net
@@ -19,8 +18,8 @@ clc;
 ResultMapPath = '../Results/';
 Results = {'Lung infection segmentation','Multi-class lung infection segmentation'};
 
-Models_LungInf = {'UNet','UNet++','Inf-Net','Semi-Inf-Net'};
-Models_MultiClass_LungInf  = {'DeepLabV3Plus_Stride8','DeepLabV3Plus_Stride16','FCN8s_1100','Semi-Inf-Net_FCN8s_1100'};
+Models_LungInf = {'Inf-Net','Semi-Inf-Net'};
+Models_MultiClass_LungInf  = {'Semi-Inf-Net_UNet'};
 
 MultiClass = {'Ground-glass opacities', 'Consolidation'};
 
@@ -78,13 +77,10 @@ for d = 1:datasetNum
             imgFiles = dir([resMapPath '*.png']);
             imgNUM = length(imgFiles);
             
-            [threshold_Fmeasure, threshold_Emeasure] = deal(zeros(imgNUM,length(Thresholds)));
-            
-            [threshold_Precion, threshold_Recall] = deal(zeros(imgNUM,length(Thresholds)));
-            
+            [threshold_Emeasure, threshold_Precion, threshold_Recall] = deal(zeros(imgNUM,length(Thresholds)));
             [threshold_Sensitivity, threshold_Specificity, threshold_Dice] = deal(zeros(imgNUM,length(Thresholds)));
             
-            [Smeasure, wFmeasure, adpFmeasure, adpEmeasure, adpDice, adpSensitivity, adpSpecificity, adpPrecision, adpF1, MAE] =deal(zeros(1,imgNUM));
+            [Smeasure, MAE] =deal(zeros(1,imgNUM));
             
             for i = 1:imgNUM
                 name =  imgFiles(i).name;
@@ -118,33 +114,19 @@ for d = 1:datasetNum
                 
                 % S-meaure metric published in ICCV'17 (Structure measure: A New Way to Evaluate the Foreground Map.)
                 Smeasure(i) = StructureMeasure(resmap,logical(gt));
-                
-                % Using the 2 times of average of resmap map as the threshold.
-                threshold =  2 * mean(resmap(:)) ;
-                [adpPrecision(i), adpSensitivity(i), adpSpecificity(i), adpDice(i), adpFmeasure(i)] = Fmeasure_calu(resmap, double(gt), size(gt), threshold);
-                
-                % adaptive E-measure
-                Bi_resmap = zeros(size(resmap));
-                Bi_resmap(resmap>threshold)=1;
-                adpEmeasure(i) = Enhancedmeasure(Bi_resmap, gt);
-                
-                [threshold_F, threshold_E]  = deal(zeros(1,length(Thresholds)));
-                [threshold_Pr, threshold_Rec]  = deal(zeros(1,length(Thresholds)));
+                   
+                [threshold_E, threshold_Pr, threshold_Rec]  = deal(zeros(1,length(Thresholds)));
                 [threshold_Spe, threshold_Dic]  = deal(zeros(1,length(Thresholds)));
                 for t = 1:length(Thresholds)
                     threshold = Thresholds(t);
-                    [threshold_Pr(t), threshold_Rec(t), threshold_Spe(t), threshold_Dic(t), threshold_F(t)] = Fmeasure_calu(resmap,double(gt),size(gt),threshold);
+                    [threshold_Pr(t), threshold_Rec(t), threshold_Spe(t), threshold_Dic(t), ~] = Fmeasure_calu(resmap,double(gt),size(gt),threshold);
                     
                     Bi_resmap = zeros(size(resmap));
                     Bi_resmap(resmap>threshold)=1;
                     threshold_E(t) = Enhancedmeasure(Bi_resmap, gt);
                 end
                 
-                threshold_Fmeasure(i,:) = threshold_F;
                 threshold_Emeasure(i,:) = threshold_E;
-                threshold_Precion(i,:) = threshold_Pr;
-                threshold_Recall(i,:) = threshold_Rec;
-                
                 threshold_Sensitivity(i,:) = threshold_Rec;
                 threshold_Specificity(i,:) = threshold_Spe;
                 threshold_Dice(i,:) = threshold_Dic;
@@ -155,12 +137,8 @@ for d = 1:datasetNum
             
             mae = mean2(MAE);
             
-            %Precision, Recall
-            column_Pr = mean(threshold_Precion,1);
-            column_Rec = mean(threshold_Recall,1);
-            
             %Sensitivity
-            column_Sen = column_Rec;
+            column_Sen = mean(threshold_Sensitivity,1);
             meanSen = mean(column_Sen);
             maxSen = max(column_Sen);
             
@@ -168,11 +146,6 @@ for d = 1:datasetNum
             column_Spe = mean(threshold_Specificity,1);
             meanSpe = mean(column_Spe);
             maxSpe = max(column_Spe);
-            
-            %F1
-            column_F = mean(threshold_Fmeasure,1);
-            meanFm = mean(column_F);
-            maxFm = max(column_F);
             
             %Dice
             column_Dic = mean(threshold_Dice,1);
@@ -186,33 +159,10 @@ for d = 1:datasetNum
             
             %Sm
             Sm = mean2(Smeasure);
-            wFm = mean2(wFmeasure); % We do not need this metric
-            
-            %adpFm = adpDice
-            adpFm = mean2(adpFmeasure);
-            
-            %adpDic = adpFm
-            adpDic = mean2(adpDice);
-            
-            %adpIoU
-            adpIoU = adpFm/(2.0-adpFm);
-            
-            %adpEm
-            adpEm = mean2(adpEmeasure);
-            
-            %adpSen
-            adpSen = mean2(adpSensitivity);
-            
-            %adpSpe
-            adpSpe = mean2(adpSpecificity);
-            
-            %adpPre
-            adpPre = mean2(adpPrecision);
-            
-            save([ResPath model],'Sm', 'wFm', 'mae', 'column_Dic', 'column_Pr', 'column_Rec', 'column_Sen', 'column_Spe' ,'column_F', 'column_E', 'adpDice','adpDic','adpEmeasure','adpEm','adpFmeasure','adpFm','adpIoU','adpPrecision','adpSensitivity','adpSen','adpSpecificity','adpSpe','maxDic','maxEm','maxFm','maxSen','maxSpe','meanDic','meanEm','meanFm','meanSen','meanSpe');
-            fprintf(fileID, '(Dataset:%s; Model:%s) adpDice/adpF1:%.3f; adpEm:%.3f; adpIoU:%.3f; adpPre:%.3f;adpRec/adpSen:%.3f;adpSpe:%.3f;meanDic:%.3f;meanEm:%.3f;meanFm:%.3f;meanSen:%.3f;meanSpe:%.3f;maxDic:%.3f;maxEm:%.3f;maxFm:%.3f;Sm:%.3f;MAE:%.3f.\n',dataset,model,adpDic,adpEm,adpIoU,adpPre,adpSen,adpSpe,meanDic,meanEm,meanFm,meanSen,meanSpe,maxDic,maxEm,maxFm,Sm,mae);
-            fprintf('(Dataset:%s; Model:%s) adpDice/adpF1:%.3f; adpEm:%.3f; adpIoU:%.3f; adpPre:%.3f;adpRec/adpSen:%.3f;adpSpe:%.3f;meanDic:%.3f;meanEm:%.3f;meanFm:%.3f;meanSen:%.3f;meanSpe:%.3f;maxDic:%.3f;maxEm:%.3f;maxFm:%.3f;Sm:%.3f;MAE:%.3f.\n',dataset,model,adpDic,adpEm,adpIoU,adpPre,adpSen,adpSpe,meanDic,meanEm,meanFm,meanSen,meanSpe,maxDic,maxEm,maxFm,Sm,mae);
-            
+               
+            save([ResPath model],'Sm', 'mae', 'column_Dic', 'column_Sen', 'column_Spe', 'column_E','maxDic','maxEm','maxSen','maxSpe','meanDic','meanEm','meanSen','meanSpe');
+            fprintf(fileID, '(Dataset:%s; Model:%s) meanDic:%.3f;meanSen:%.3f;meanSpe:%.3f;Sm:%.3f;meanEm:%.3f;MAE:%.3f.\n',dataset,model,meanDic,meanSen,meanSpe,Sm,meanEm,mae);
+            fprintf('(Dataset:%s; Model:%s) meanDic:%.3f;meanSen:%.3f;meanSpe:%.3f;Sm:%.3f;meanEm:%.3f;MAE:%.3f.\n',dataset,model,meanDic,meanSen,meanSpe,Sm,meanEm,mae);
         end
     end
     toc;

@@ -1,0 +1,2 @@
+(Dataset:LungInfection-Test; Model:Inf-Net) meanDic:0.682;meanSen:0.692;meanSpe:0.943;Sm:0.781;meanEm:0.838;MAE:0.082.
+(Dataset:LungInfection-Test; Model:Semi-Inf-Net) meanDic:0.739;meanSen:0.725;meanSpe:0.960;Sm:0.800;meanEm:0.894;MAE:0.064.

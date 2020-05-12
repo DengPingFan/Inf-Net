@@ -1,0 +1,1 @@
+(Dataset:MultiClassInfection-Test; Model:Semi-Inf-Net_UNet) meanDic:0.624;meanSen:0.618;meanSpe:0.966;Sm:0.706;meanEm:0.889;MAE:0.067.

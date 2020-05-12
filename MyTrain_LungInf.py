@@ -110,6 +110,10 @@ if __name__ == '__main__':
                         default='./Dataset/TrainingSet/LungInfection-Train/Doctor-label')
     parser.add_argument('--is_semi', type=bool, default=False,
                         help='if True, you will turn on the mode of `Semi-Inf-Net`')
+    parser.add_argument('--is_pseudo', type=bool, default=False,
+                        help='if True, you will train the model on pseudo-label')
+    parser.add_argument('--train_save', type=str, default=None,
+                        help='If you use custom save path, please edit `--is_semi=True` and `--is_pseudo=True`')
 
     opt = parser.parse_args()
 
@@ -137,10 +141,16 @@ if __name__ == '__main__':
     else:
         print('Not loading weights from weights file')
 
-    if opt.is_semi:
+    # weights file save path
+    if opt.is_pseudo and (not opt.is_semi):
+        train_save = 'Inf-Net_Pseudo'
+    elif (not opt.is_pseudo) and opt.is_semi:
         train_save = 'Semi-Inf-Net'
-    else:
+    elif (not opt.is_pseudo) and (not opt.is_semi):
         train_save = 'Inf-Net'
+    else:
+        print('Use custom save path')
+        train_save = opt.train_save
 
     # ---- calculate FLOPs and Params ----
     if opt.is_thop:

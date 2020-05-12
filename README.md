@@ -3,24 +3,70 @@
 > **Authors:** 
 > [Deng-Ping Fan](https://dpfan.net/), 
 > [Tao Zhou](https://taozh2017.github.io/), 
-> Ge-Peng Ji, 
-> Yi Zhou, 
+> [Ge-Peng Ji](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
+> [Yi Zhou](https://scholar.google.com/citations?hl=zh-CN&user=EnDCJKMAAAAJ), 
 > [Geng Chen](https://www.researchgate.net/profile/Geng_Chen13), 
 > [Huazhu Fu](http://hzfu.github.io/), 
 > [Jianbing Shen](http://iitlab.bit.edu.cn/mcislab/~shenjianbing), and 
 > [Ling Shao](http://www.inceptioniai.org/).
 
+## 0. Preface
+
 - This repository provides code for "_**Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans**_" submit to TMI-2020. 
 ([arXiv Pre-print](https://arxiv.org/abs/2004.14133) & [medrXiv](https://www.medrxiv.org/content/10.1101/2020.04.22.20074948v1))
 
-- Any questions please contact to [Ge-Peng Ji](gepengai.ji@gmail.com) or [Deng-Ping Fan](dengpfan@gmail.com) via E-mail.
+- If you have any questions about our paper, feel free to contact [Deng-Ping Fan](dengpfan@gmail.com) 
+or [Ge-Peng Ji](gepengai.ji@gmail.com) via E-mail. And if you are using COVID-SemiSeg Dataset, Inf-Net or evaluation toolbox for your research, 
+please cite this paper ([BibTeX](#8-citation)).
+
+### 0.1. Table of Contents
+
+- [Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans](#inf-net--automatic-covid-19-lung-infection-segmentation-from-ct-scans)
+  * [0. Preface](#0-preface)
+    + [0.1. Table of Contents](#01-table-of-contents)
+    + [0.2. NEWS](#02-news)
+  * [1. Introduction](#1-introduction)
+    + [1.1. Task Description](#11-task-description)
+  * [2. Proposed Methods](#2-proposed-methods)
+    + [2.1. Inf-Net](#21-inf-net)
+      - [2.1.1 Overview](#211-overview)
+      - [2.1.2. Usage](#212-usage)
+    + [2.2. Semi-Inf-Net](#22-semi-inf-net)
+      - [2.2.1. Overview](#221-overview)
+      - [2.2.2. Usage](#222-usage)
+    + [2.3. Semi-Inf-Net + UNet](#23-semi-inf-net---unet)
+      - [2.3.1. Overview](#231-overview)
+      - [2.3.2. Usage](#232-usage)
+  * [3. Evaluation Toolbox](#3-evaluation-toolbox)
+    + [3.1. Introduction](#31-introduction)
+    + [3.2. Usage](#32-usage)
+  * [4. COVID-SemiSeg Dataset](#4-covid-semiseg-dataset)
+    + [3.1. Training set](#31-training-set)
+    + [3.2. Testing set](#32-testing-set)
+  * [4. Results](#4-results)
+    + [4.1. Download link:](#41-download-link-)
+  * [5. Visualization Results:](#5-visualization-results-)
+  * [6. Paper list of COVID-19 related (update continue)](#6-paper-list-of-covid-19-related--update-continue-)
+  * [7. Manuscript](#7-manuscript)
+  * [8. Citation](#8-citation)
+  * [9. LICENSE](#9-license)
+  * [10. Acknowledgements](#10-acknowledgements)
+  * [11. TODO LIST](#11-todo-list)
+  * [12. FAQ](#12-faq)
+
+### 0.2. NEWS
+
+- [2020/05/12] Release training/testing/evaluation code. (Updated by Ge-Peng Ji)
+
+
+
 
 ## 1. Introduction
 
 ### 1.1. Task Description
 
 <p align="center">
-    <img src="./imgs/COVID'19-Infection.png"/> <br />
+    <img src="Imgs/COVID'19-Infection.png"/> <br />
     <em> 
     Figure 1. Example of COVID-19 infected regions in CT axial slice, where the red and green masks denote the 
     ground-glass opacity (GGO) and consolidation, respectively. The images are collected from [1].
@@ -68,7 +114,7 @@
 #### 2.1.1 Overview
 
 <p align="center">
-    <img src="./imgs/Inf-Net.png"/> <br />
+    <img src="Imgs/Inf-Net.png"/> <br />
     <em> 
     Figure 2. The architecture of our proposed Inf-Net model, which consists of three reverse attention 
     (RA) modules connected to the paralleled partial decoder (PPD).
@@ -97,7 +143,7 @@
 #### 2.2.1. Overview
 
 <p align="center">
-    <img src="./imgs/Semi-InfNet.png"/> <br />
+    <img src="Imgs/Semi-InfNet.png"/> <br />
     <em> 
     Figure 3. Overview of the proposed Semi-supervised Inf-Net framework.
     </em>
@@ -107,38 +153,47 @@
 
 1. Data Preparation (Optional)
     
-    Dividing the unlabeled image into multiple groups (1600/5=320 groups), in which images with 
-    `*.jgp` format can be downloaded from [Google Drive](). You should copy them into 
-    `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Split/Imgs`. Then you only just run the the code stored 
-    in `./SrcCode/utils/split_1600.py` to prepare sub-dataset used in the training process of pseudo-label generation. 
-    **You can also skip this process and download them from [Google Drive]() that is used in our implementation.** 
-    Note that all the images are stored in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Split/`
+    - Dividing the 1600 unlabeled image into 320 groups (1600/5=320 groups, we set $K=5$ in our implementation), 
+    in which images with `*.jgp` format can be downloaded from [Google Drive](). You should copy them into 
+    `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/DataPrepare/Imgs/`. 
+    Then you only just run the the code stored in `./SrcCode/utils/split_1600.py` to split it into multiple sub-dataset, 
+    which are used in the training process of pseudo-label generation. 
+    
+    - **You can also skip this process and download them from [Google Drive]() that is used in our implementation.**
 
 1. Generating Pseudo Labels (Optional)
 
-    - run `PseudoGenerator.py`
-
-1. Train
-
-    - run `MyTrain_LungInf.py`
-
-1. Test
+    - After prepare all the data, just run `PseudoGenerator.py`. It may take at least day and a half to finish the whole generation.
     
-    - When training is completed, the weights will be saved in `./Snapshots/save_weights/Semi-Inf-Net/`. 
-    You also can directly download the pre-trained weights from [Google Drive]().
+    - **You can also skip this process and download them from [Google Drive]() that is used in our implementation.**
     
-    - run `MyTest_MulClsLungInf_UNet.py`
+    - When training is completed, the images with pseudo labels will be saved in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/`.
 
 
-### 2.3. Semi-Inf-Net + UNet
+### 2.3. Semi-Inf-Net + Multi-class UNet
 
 #### 2.3.1. Overview
 
+We modify the original design of UNet that is used for binary segmentation, and thus, we name it as _Multi-class UNet_. 
+More details can be found in our paper.
+
 #### 2.3.2. Usage
 
-- Pre-trained Model
+1. Train
 
-    Coming soon ...
+    - Just run `MyTrain_MulClsLungInf_UNet.py`
+    
+    - Note that `./Dataset/TrainingSet/MultiClassInfection-Train/Prior` is just borrowed from `./Dataset/TestingSet/LungInfection-Test/GT/`, 
+    and thus, two repositories are equally.
+
+1. Test
+    
+    - When training is completed, the weights will be saved in `./Snapshots/save_weights/Semi-Inf-Net_UNet/`. 
+    You also can directly download the pre-trained weights from [Google Drive]().
+    
+    - Assigning the path of weights in parameters `snapshot_dir` and run `MyTest_MulClsLungInf_UNet.py`. 
+    All the predictions will be saved in `./Results/Multi-class lung infection segmentation/Consolidation` and 
+    `./Results/Multi-class lung infection segmentation/Ground-glass opacities`.
 
 ## 3. Evaluation Toolbox
 
@@ -170,8 +225,8 @@ Our COVID-SemiSeg Dataset can be downloaded at [Google Drive](https://drive.goog
 
 ### 3.1. Training set
 
-1. Lung infection which consists of 50 labels by doctors (Doctor-label) and 1600 pesudo labels generated (Pesudo-label) by our Semi-Inf-Net model.<br>
-Download: http://dpfan.net/wp-content/uploads/LungInfection-Train.zip
+1. Lung infection which consists of 50 labels by doctors (Doctor-label) and 1600 pesudo labels generated (Pesudo-label) 
+by our Semi-Inf-Net model. Download: http://dpfan.net/wp-content/uploads/LungInfection-Train.zip
 
 2. Multi-Class lung infection which also composed of 50 multi-class labels (GT) by doctors and 50 lung infection labels (Prior) generated by our Semi-Inf-Net model.<br>
 Download: http://dpfan.net/wp-content/uploads/MultiClassInfection-Train.zip
@@ -197,14 +252,14 @@ Multi-class lung infection segmentation: http://dpfan.net/wp-content/uploads/Mul
 ## 5. Visualization Results:
 
 <p align="center">
-    <img src="./imgs/InfectionSeg.png"/> <br />
+    <img src="Imgs/InfectionSeg.png"/> <br />
     <em> 
     Figure 4. Visual comparison of lung infection segmentation results.
     </em>
 </p>
 
 <p align="center">
-    <img src="./imgs/MultiClassInfectionSeg.png"/> <br />
+    <img src="Imgs/MultiClassInfectionSeg.png"/> <br />
     <em> 
     Figure 5. Visual comparison of multi-class lung infection segmentation results, where the red and green labels 
     indicate the GGO and consolidation, respectively.
@@ -228,6 +283,47 @@ Please cite our paper if you find the work useful:
   	year={2020}
 	}
  
- ## 9. Acknowledgements
+## 9. LICENSE
+
+- The **COVID-SemiSeg Dataset** is made available for non-commercial purposes only.
+
+- You will not, directly or indirectly, reproduce, use, or convey the **COVID-SemiSeg Dataset** 
+or any Content, or any work product or data derived therefrom, for commercial purposes.
+
+## 10. Acknowledgements
  
- We thanks [xxx]() for their contributions.
+We would like to thank [xxx]() for their contributions.
+
+## 11. TODO LIST
+
+> If you want to improve the usability of code or any other advices, please feel free to contact me directly ([E-mail](gepengai.ji@gmail.com)).
+
+- [ ] Support `NVIDIA APEX` training.
+
+- [ ] Support different backbones (
+VGGNet, 
+ResNet, 
+[ResNeXt](https://github.com/facebookresearch/ResNeXt)
+[Res2Net](https://github.com/Res2Net/Res2Net-PretrainedModels), 
+[iResNet](https://github.com/iduta/iresnet), 
+and 
+[ResNeSt](https://github.com/zhanghang1989/ResNeSt) 
+etc.)
+
+- [ ] Support distributed training.
+
+- [ ] Support lightweight architecture and real-time inference, like MobileNet, SqueezeNet.
+
+- [ ] Support distributed training
+
+- [ ] Add more comprehensive competitors.
+
+## 12. FAQ
+
+1. If the image cannot be loaded in the page (mostly in the domestic network situations).
+
+    [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
+
+---
+
+**[⬆ back to top](#0-preface)**

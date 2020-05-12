@@ -6,6 +6,7 @@ from torch.utils.data import DataLoader
 from Code.model_lung_infection.InfNet_UNet import *  # 当前用的UNet模型
 from scipy import misc
 from Code.utils.split_class import split_class
+import shutil
 
 
 def inference(num_classes, input_channels, snapshot_dir, save_path):
@@ -39,15 +40,18 @@ def inference(num_classes, input_channels, snapshot_dir, save_path):
 
         # output b*n_class*h*w -- > b*h*w
         pred = output.cpu().permute(0, 2, 3, 1).contiguous().view(-1, num_classes).max(1)[1].view(b, w, h).numpy().squeeze()
-        print('Prediction Class Numbers in total:', np.unique(pred))
+        print('Class numbers of prediction in total:', np.unique(pred))
         # pred = misc.imresize(pred, size=(w_gt, h_gt))
         os.makedirs(save_path, exist_ok=True)
         misc.imsave(save_path + name[0].replace('.jpg', '.png'), pred)
         split_class(save_path, name[0].replace('.jpg', '.png'), w_gt, h_gt)
 
+    shutil.rmtree(save_path)
+
 
 if __name__ == "__main__":
     inference(num_classes=3,
               input_channels=6,
-              snapshot_dir='./Snapshots/save_weights/Semi-Inf-Net_UNet/unet_model_199.pkl',
-              save_path='./Results/Multi-class lung infection segmentation/class_12/')
+              snapshot_dir='./Snapshots/save_weights/Semi-Inf-Net_UNet/unet_model_200.pkl',
+              save_path='./Results/Multi-class lung infection segmentation/class_12/'
+              )

@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="70645ccf-d112-42c5-b376-c6624bbb4cd6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTest_LungInf.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest_LungInf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTrain_LungInf.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain_LungInf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTrain_MulClsLungInf_UNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain_MulClsLungInf_UNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PseudoGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/PseudoGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,21 +26,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bQoqs4vKgYC2fcqykEjipaFs0s" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Results/Multi-class lung infection segmentation" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Github\Inf-Net" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Github\Inf-Net\SrcCode" />
       <recent name="D:\Github\Inf-Net\tmp" />
       <recent name="D:\Github\Inf-Net\Snapshots\pretrained" />
+      <recent name="D:\Github\Inf-Net" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\Inf-Net\Results\Multi-class lung infection segmentation" />
       <recent name="D:\Github\Inf-Net" />
     </key>
   </component>
@@ -97,6 +105,7 @@
       <workItem from="1589250509980" duration="900000" />
       <workItem from="1589270206239" duration="3345000" />
       <workItem from="1589279493090" duration="1765000" />
+      <workItem from="1589284971335" duration="7203000" />
     </task>
     <servers />
   </component>
@@ -115,6 +124,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Inf_Net$split_1600.coverage" NAME="split_1600 Coverage Results" MODIFIED="1589203343852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />

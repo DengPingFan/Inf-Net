@@ -22,7 +22,7 @@ def train(epo_num, num_classes, input_channels, batch_size, lr, save_path):
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    lung_model = UNet(input_channels, num_classes)  # input_channels=3， n_class=3
+    lung_model = Inf_Net_UNet(input_channels, num_classes)  # input_channels=3， n_class=3
     print(lung_model)
     lung_model = lung_model.to(device)
 

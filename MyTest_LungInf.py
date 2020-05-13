@@ -4,7 +4,7 @@ import numpy as np
 import os
 import argparse
 from scipy import misc
-from Code.model_lung_infection.InfNet_Res2Net import PraNetPlusPlus as Network
+from Code.model_lung_infection.InfNet_Res2Net import Inf_Net as Network
 from Code.utils.dataloader_LungInf import test_dataset
 
 

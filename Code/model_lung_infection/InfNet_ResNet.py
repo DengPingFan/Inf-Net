@@ -96,10 +96,10 @@ class aggregation(nn.Module):
         return x
 
 
-class PraNetPlusPlus(nn.Module):
+class Inf_Net(nn.Module):
     # res2net based encoder decoder
     def __init__(self, channel=32, n_class=1):
-        super(PraNetPlusPlus, self).__init__()
+        super(Inf_Net, self).__init__()
         # ---- ResNet Backbone ----
         self.resnet = ResNet()
         # ---- Receptive Field Block like module ----

@@ -95,9 +95,9 @@ class aggregation(nn.Module):
         return x
 
 
-class PraNetPlusPlus(nn.Module):
+class Inf_Net(nn.Module):
     def __init__(self, channel=32, n_class=1):
-        super(PraNetPlusPlus, self).__init__()
+        super(Inf_Net, self).__init__()
         # ---- ResNet Backbone ----
         self.resnet = res2net50_v1b_26w_4s(pretrained=True)
         # ---- Receptive Field Block like module ----

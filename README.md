@@ -108,6 +108,8 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
     + Creating a virtual environment in terminal: `conda create -n SINet python=3.6`.
     
     + Installing necessary packages: `pip install -r requirements.txt`.
+    
+    - install [THOP](https://github.com/Lyken17/pytorch-OpCounter) for counting the FLOPs/Params of model.
 
 ### 2.1. Inf-Net
 
@@ -272,12 +274,19 @@ Download: http://dpfan.net/wp-content/uploads/MultiClassInfection-Test.zip
 
 ## 4. Results
 
-To compare the infection regions segmentation performance, we consider the two state-of-the-art models U-Net and U-Net++. We also show the multi-class infection labeling results in Fig. 5. As can be observed, our model, Semi-Inf-Net & FCN8s, consistently performs the best among all methods. It is worth noting that both GGO and consolidation infections are accurately segmented by Semi-Inf-Net & FCN8s, which further demonstrates the advantage of our model. In contrast, the baseline methods, DeepLabV3+ with different strides and FCNs, all obtain unsatisfactory results, where neither GGO and consolidation infections can be accurately segmented. <br> <br>
+To compare the infection regions segmentation performance, we consider the two state-of-the-art models U-Net and U-Net++. 
+We also show the multi-class infection labeling results in Fig. 5. As can be observed, 
+our model, Semi-Inf-Net & FCN8s, consistently performs the best among all methods. It is worth noting that both GGO and 
+consolidation infections are accurately segmented by Semi-Inf-Net & FCN8s, which further demonstrates the advantage of 
+our model. In contrast, the baseline methods, DeepLabV3+ with different strides and FCNs, all obtain unsatisfactory 
+results, where neither GGO and consolidation infections can be accurately segmented.
+
 Overall results: http://dpfan.net/wp-content/uploads/COVID-SemiSeg-Results.zip
 
 ### 4.1. Download link:
 
-Lung infection segmentation results: http://dpfan.net/wp-content/uploads/Lung-infection-segmentation.zip <br>
+Lung infection segmentation results: http://dpfan.net/wp-content/uploads/Lung-infection-segmentation.zip
+
 Multi-class lung infection segmentation: http://dpfan.net/wp-content/uploads/Multi-class-lung-infection-segmentation.zip
 
 ## 5. Visualization Results:

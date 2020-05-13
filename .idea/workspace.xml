@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SINet" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -154,7 +154,8 @@
       <workItem from="1589355201744" duration="118000" />
       <workItem from="1589355338902" duration="272000" />
       <workItem from="1589356542236" duration="629000" />
-      <workItem from="1589357658220" duration="1611000" />
+      <workItem from="1589357658220" duration="2026000" />
+      <workItem from="1589366452976" duration="476000" />
     </task>
     <servers />
   </component>

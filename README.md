@@ -19,6 +19,8 @@
 or [Ge-Peng Ji](gepengai.ji@gmail.com) via E-mail. And if you are using COVID-SemiSeg Dataset, 
 Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX](#8-citation)).
 
+- We elaborately collect COVID-19 imaging-based AI research papers and datasets [awesome-list]((#6-paper-list-of-covid-19-related--update-continue-)).
+
 ### 0.1. Table of Contents
 
 - [Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans](#inf-net--automatic-covid-19-lung-infection-segmentation-from-ct-scans)
@@ -152,14 +154,15 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 #### 2.2.2. Usage
 
-1. Data Preparation (Optional)
+1. Data Preparation for pseudo-label generation. (Optional)
     
     - Dividing the 1600 unlabeled image into 320 groups (1600/K groups, we set K=5 in our implementation), 
-    in which images with `*.jgp` format can be downloaded from [Google Drive](). You should copy them into 
-    `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/DataPrepare/Imgs/`. 
+    in which images with `*.jgp` format can be found in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Imgs/`. 
+    (I suppose you have download all the train/test images following the instructions [above]((#2-proposed-methods)))
     Then you only just run the the code stored in `./SrcCode/utils/split_1600.py` to split it into multiple sub-dataset, 
-    which are used in the training process of pseudo-label generation. 
-    
+    which are used in the training process of pseudo-label generation. The 1600/K sub-datasets will be saved in 
+    `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/DataPrepare/Imgs_split/`
+       
     - **You can also skip this process and download them from [Google Drive]() that is used in our implementation.**
 
 1. Generating Pseudo Labels (Optional)
@@ -200,8 +203,9 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 #### 2.3.1. Overview
 
-We modify the original design of UNet that is used for binary segmentation, and thus, we name it as _Multi-class UNet_. 
-More details can be found in our paper.
+    Here, we provide a general and simple framework to address the multi-class segmentation problem. We modify the 
+    original design of UNet that is used for binary segmentation, and thus, we name it as _Multi-class UNet_. 
+    More details can be found in our paper.
 
 <p align="center">
     <img src="Imgs/MultiClassExtension.png"/> <br />

@@ -137,7 +137,7 @@ if __name__ == '__main__':
     # - See Sec.2.3 of `README.md` to learn how to generate your own img/pseudo-label from scratch.
     if opt.is_semi and opt.backbone == 'Res2Net50':
         print('Loading weights from weights file trained on pseudo label')
-        model.load_state_dict(torch.load('./Snapshots/save_weights/Inf-Net_Pseduo/Inf-Net_pseudo_99.pth'))
+        model.load_state_dict(torch.load('./Snapshots/save_weights/Inf-Net_Pseduo/Inf-Net_pseudo_100.pth'))
     else:
         print('Not loading weights from weights file')
 

@@ -137,7 +137,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 1. Test
     
     - When training is completed, the weights will be saved in `./Snapshots/save_weights/Inf-Net/`. 
-    You also can directly download the pre-trained weights from [Google Drive]().
+    You also can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=19p_G8NS4NwF4pZOEOX3w06ZLVh0rj3VW).
     
     - Assign the path `--pth_path` of trained weights and `--save_path` of results save and in `MyTest_LungInf.py`.
     
@@ -165,13 +165,13 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
     which are used in the training process of pseudo-label generation. The 1600/K sub-datasets will be saved in 
     `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/DataPrepare/Imgs_split/`
        
-    - **You can also skip this process and download them from [Google Drive]() that is used in our implementation.**
+    - **You can also skip this process and download them from [Google Drive](https://drive.google.com/open?id=1Rn_HhgTEhy-M7qmPVspdJiamWC_kueFJ) that is used in our implementation.**
 
 1. Generating Pseudo Labels (Optional)
 
     - After preparing all the data, just run `PseudoGenerator.py`. It may take at least day and a half to finish the whole generation.
     
-    - **You can also skip this process and download them from [Google Drive]() that is used in our implementation.**
+    - **You can also skip this process and download intermediate generated file from [Google Drive](https://drive.google.com/open?id=1Rn_HhgTEhy-M7qmPVspdJiamWC_kueFJ) that is used in our implementation.**
     
     - When training is completed, the images with pseudo labels will be saved in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/`.
 
@@ -185,8 +185,8 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
      (`--is_pseudo=True`) in the parser of `MyTrain_LungInf.py` and modify the path train data to the pseudo-label 
      repository (`--train_path='Dataset/TrainingSet/LungInfection-Train/Pseudo-label'`). Just run it.
     
-    - When training is completed, the weights (trained on pseudo-label) will be saved in `./Snapshots/save_weights/Inf-Net/`. 
-    You also can directly download the pre-trained weights from [Google Drive]().
+    - When training is completed, the weights (trained on pseudo-label) will be saved in `./Snapshots/save_weights/Inf-Net_Pseduo/`. 
+    You also can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=1NMM0BoVJU9DS8u4yTG0L-V_mcHKajrmN).
     
     - Secondly, turn on the semi-supervised mode (`--is_semi=True`) and turn off the flag of whether use pseudo labels
      (`--is_pseudo=False`) in the parser of `MyTrain_LungInf.py` and modify the path train data to the doctor-label 
@@ -195,7 +195,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 1. Test
     
     - When training is completed, the weights will be saved in `./Snapshots/save_weights/Semi-Inf-Net/`. 
-    You also can directly download the pre-trained weights from [Google Drive]().
+    You also can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=1iHMQ9bjm4-qZaZZFXigZ-iruZOSB9mty).
     
     - Assign the path `--pth_path` of trained weights and `--save_path` of results save and in `MyTest_LungInf.py`.
     
@@ -228,7 +228,7 @@ More details can be found in our paper.
 1. Test
     
     - When training is completed, the weights will be saved in `./Snapshots/save_weights/Semi-Inf-Net_UNet/`. 
-    You also can directly download the pre-trained weights from [Google Drive]().
+    You also can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=1V4VJl5X4kJVD6HHWYsGzbrbPh8Q_Vc0I).
     
     - Assigning the path of weights in parameters `snapshot_dir` and run `MyTest_MulClsLungInf_UNet.py`. 
     All the predictions will be saved in `./Results/Multi-class lung infection segmentation/Consolidation` and 

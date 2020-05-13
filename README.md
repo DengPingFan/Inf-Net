@@ -21,12 +21,20 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 - We elaborately collect COVID-19 imaging-based AI research papers and datasets [awesome-list]((#6-paper-list-of-covid-19-related--update-continue-)).
 
-### 0.1. Table of Contents
+### 0.1. :fire: NEWS :fire:
+
+- [2020/05/13] :boom: Upload pre-trained weights. (Uploaded by Ge-Peng Ji)
+
+- [2020/05/12] :boom: Release training/testing/evaluation code. (Updated by Ge-Peng Ji)
+
+- [2020/05/01] Create repository.
+
+### 0.2. Table of Contents
 
 - [Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans](#inf-net--automatic-covid-19-lung-infection-segmentation-from-ct-scans)
   * [0. Preface](#0-preface)
-    + [0.1. Table of Contents](#01-table-of-contents)
-    + [0.2. NEWS](#02-news)
+    + [0.1. :fire: NEWS :fire:](#01--fire--news--fire-)
+    + [0.2. Table of Contents](#02-table-of-contents)
   * [1. Introduction](#1-introduction)
     + [1.1. Task Description](#11-task-description)
   * [2. Proposed Methods](#2-proposed-methods)
@@ -56,14 +64,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
   * [11. TODO LIST](#11-todo-list)
   * [12. FAQ](#12-faq)
 
-### 0.2. :fire: NEWS :fire:
-
-- [2020/05/13] :boom: Upload pre-trained weights. (Uploaded by Ge-Peng Ji)
-
-- [2020/05/12] :boom: Release training/testing/evaluation code. (Updated by Ge-Peng Ji)
-
-- [2020/05/01] Create repository.
-
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## 1. Introduction
 

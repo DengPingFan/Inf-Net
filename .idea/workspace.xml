@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70645ccf-d112-42c5-b376-c6624bbb4cd6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/model_lung_infection/InfNet_Res2Net.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/model_lung_infection/InfNet_Res2Net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/model_lung_infection/InfNet_ResNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/model_lung_infection/InfNet_ResNet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/model_lung_infection/InfNet_UNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/model_lung_infection/InfNet_UNet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/model_lung_infection/InfNet_VGGNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/model_lung_infection/InfNet_VGGNet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTest_LungInf.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest_LungInf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTest_MulClsLungInf_UNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest_MulClsLungInf_UNet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTrain_LungInf.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain_LungInf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTrain_MulClsLungInf_UNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain_MulClsLungInf_UNet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Imgs/paper-list-cover.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -158,7 +150,7 @@
       <workItem from="1589270206239" duration="3345000" />
       <workItem from="1589279493090" duration="1765000" />
       <workItem from="1589284971335" duration="10783000" />
-      <workItem from="1589324259047" duration="4533000" />
+      <workItem from="1589324259047" duration="4822000" />
     </task>
     <servers />
   </component>

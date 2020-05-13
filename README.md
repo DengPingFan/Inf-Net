@@ -203,9 +203,9 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 #### 2.3.1. Overview
 
-    Here, we provide a general and simple framework to address the multi-class segmentation problem. We modify the 
-    original design of UNet that is used for binary segmentation, and thus, we name it as _Multi-class UNet_. 
-    More details can be found in our paper.
+Here, we provide a general and simple framework to address the multi-class segmentation problem. We modify the 
+original design of UNet that is used for binary segmentation, and thus, we name it as _Multi-class UNet_. 
+More details can be found in our paper.
 
 <p align="center">
     <img src="Imgs/MultiClassExtension.png"/> <br />
@@ -354,10 +354,10 @@ We would like to thank [xxx]() for their contributions.
 - [ ] Support `NVIDIA APEX` training.
 
 - [ ] Support different backbones (
-VGGNet, 
+VGGNet (done), 
 ResNet, 
 [ResNeXt](https://github.com/facebookresearch/ResNeXt)
-[Res2Net](https://github.com/Res2Net/Res2Net-PretrainedModels), 
+[Res2Net (done)](https://github.com/Res2Net/Res2Net-PretrainedModels), 
 [iResNet](https://github.com/iduta/iresnet), 
 and 
 [ResNeSt](https://github.com/zhanghang1989/ResNeSt) 

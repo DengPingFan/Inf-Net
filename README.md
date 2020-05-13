@@ -56,11 +56,13 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
   * [11. TODO LIST](#11-todo-list)
   * [12. FAQ](#12-faq)
 
-### 0.2. NEWS
+### 0.2. :fire: NEWS :fire:
 
-- [2020/05/13] 
+- [2020/05/13] :boom: Upload pre-trained weights. (Uploaded by Ge-Peng Ji)
 
-- [2020/05/12] Release training/testing/evaluation code. (Updated by Ge-Peng Ji)
+- [2020/05/12] :boom: Release training/testing/evaluation code. (Updated by Ge-Peng Ji)
+
+- [2020/05/01] Create repository.
 
 
 ## 1. Introduction

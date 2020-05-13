@@ -288,9 +288,9 @@ Overall results can be downloaded from this [link](http://dpfan.net/wp-content/u
 
 ### 4.1. Download link:
 
-Lung infection segmentation results: [Link](http://dpfan.net/wp-content/uploads/Lung-infection-segmentation.zip)
+Lung infection segmentation results can be downloaded from this [link](http://dpfan.net/wp-content/uploads/Lung-infection-segmentation.zip)
 
-Multi-class lung infection segmentation: [Link](http://dpfan.net/wp-content/uploads/Multi-class-lung-infection-segmentation.zip)
+Multi-class lung infection segmentation can be downloaded from this [link](http://dpfan.net/wp-content/uploads/Multi-class-lung-infection-segmentation.zip)
 
 ## 5. Visualization Results:
 

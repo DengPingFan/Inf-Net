@@ -1,9 +1,18 @@
+# -*- coding: utf-8 -*-
+
+"""Preview
+Code for 'Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans'
+submit to Transactions on Medical Imaging, 2020.
+
+First Version: Created on 2020-05-13 (@author: Ge-Peng Ji)
+"""
+
 import os
 import shutil
 import random
 
-unlabeled_imgs_dir = '../Dataset/TrainingSet/LungInfection-Train/Pseudo-label/DataPrepare/Imgs'
-save_path = '../Dataset/TrainingSet/LungInfection-Train/Pseudo-label/DataPrepare/Imgs_splits'
+unlabeled_imgs_dir = '../../Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Imgs'
+save_path = '../../Dataset/TrainingSet/LungInfection-Train/Pseudo-label/DataPrepare/Imgs_splits'
 
 img_list = os.listdir(unlabeled_imgs_dir)
 random.shuffle(img_list)

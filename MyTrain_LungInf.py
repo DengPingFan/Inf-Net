@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+
+"""Preview
+Code for 'Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans'
+submit to Transactions on Medical Imaging, 2020.
+
+First Version: Created on 2020-05-13 (@author: Ge-Peng Ji)
+"""
+
 import torch
 from torch.autograd import Variable
 import os
@@ -122,22 +131,22 @@ if __name__ == '__main__':
 
     if opt.backbone == 'Res2Net50':
         print('Backbone loading: Res2Net50')
-        from Code.model_lung_infection.InfNet_Res2Net import PraNetPlusPlus
+        from Code.model_lung_infection.InfNet_Res2Net import Inf_Net
     elif opt.backbone == 'ResNet50':
         print('Backbone loading: ResNet50')
-        from Code.model_lung_infection.InfNet_ResNet import PraNetPlusPlus
+        from Code.model_lung_infection.InfNet_ResNet import Inf_Net
     elif opt.backbone == 'VGGNet16':
         print('Backbone loading: VGGNet16')
-        from Code.model_lung_infection.InfNet_VGGNet import PraNetPlusPlus
+        from Code.model_lung_infection.InfNet_VGGNet import Inf_Net
     else:
         raise ValueError('Invalid backbone parameters: {}'.format(opt.backbone))
-    model = PraNetPlusPlus(channel=opt.net_channel, n_class=opt.n_classes).cuda()
+    model = Inf_Net(channel=opt.net_channel, n_class=opt.n_classes).cuda()
 
     # ---- load pre-trained weights (mode=Semi-Inf-Net) ----
     # - See Sec.2.3 of `README.md` to learn how to generate your own img/pseudo-label from scratch.
     if opt.is_semi and opt.backbone == 'Res2Net50':
         print('Loading weights from weights file trained on pseudo label')
-        model.load_state_dict(torch.load('./Snapshots/pre_trained/Inf-Net_pseudo_99.pth'))
+        model.load_state_dict(torch.load('./Snapshots/save_weights/Inf-Net_Pseduo/Inf-Net_pseudo_100.pth'))
     else:
         print('Not loading weights from weights file')
 

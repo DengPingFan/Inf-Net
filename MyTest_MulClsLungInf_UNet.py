@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+
+"""Preview
+Code for 'Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans'
+submit to Transactions on Medical Imaging, 2020.
+
+First Version: Created on 2020-05-13 (@author: Ge-Peng Ji)
+"""
+
 import os
 import numpy as np
 from Code.utils.dataloader_MulClsLungInf_UNet import LungDataset
@@ -23,7 +32,7 @@ def inference(num_classes, input_channels, snapshot_dir, save_path):
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    lung_model = UNet(input_channels, num_classes).cuda()
+    lung_model = Inf_Net_UNet(input_channels, num_classes).cuda()
     print(lung_model)
     lung_model.load_state_dict(torch.load(snapshot_dir))
     lung_model.eval()

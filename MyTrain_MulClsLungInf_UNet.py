@@ -1,4 +1,12 @@
-from datetime import datetime
+# -*- coding: utf-8 -*-
+
+"""Preview
+Code for 'Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans'
+submit to Transactions on Medical Imaging, 2020.
+
+First Version: Created on 2020-05-13 (@author: Ge-Peng Ji)
+"""
+
 import os
 import numpy as np
 import torch.optim as optim
@@ -22,7 +30,7 @@ def train(epo_num, num_classes, input_channels, batch_size, lr, save_path):
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    lung_model = UNet(input_channels, num_classes)  # input_channels=3， n_class=3
+    lung_model = Inf_Net_UNet(input_channels, num_classes)  # input_channels=3， n_class=3
     print(lung_model)
     lung_model = lung_model.to(device)
 

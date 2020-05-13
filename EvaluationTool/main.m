@@ -18,8 +18,8 @@ clc;
 ResultMapPath = '../Results/';
 Results = {'Lung infection segmentation','Multi-class lung infection segmentation'};
 
-Models_LungInf = {'Inf-Net','Semi-Inf-Net'};
-Models_MultiClass_LungInf  = {'Semi-Inf-Net_UNet'};
+Models_LungInf = {'UNet','UNet++','Inf-Net','Semi-Inf-Net'};
+Models_MultiClass_LungInf  = {'DeepLabV3Plus_Stride8','DeepLabV3Plus_Stride16','FCN8s_1100','Semi-Inf-Net_FCN8s_1100', 'Semi-Inf-Net_UNet'};
 
 MultiClass = {'Ground-glass opacities', 'Consolidation'};
 

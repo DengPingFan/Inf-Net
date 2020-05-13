@@ -1,5 +1,5 @@
 #!/usr/env/bin python3.6
-
+# NOTES: this repository do not used in current release, I will add more loss function in future
 from typing import List
 
 import torch

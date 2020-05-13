@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+
+"""Preview
+Code for 'Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans'
+submit to Transactions on Medical Imaging, 2020.
+
+First Version: Created on 2020-05-13 (@author: Ge-Peng Ji)
+"""
+
 # ---- base lib -----
 import os
 import argparse
@@ -13,7 +22,7 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 # ---- custom lib ----
 # NOTES: Here we nly provide Res2Net, you can also replace it with other backbones
-from Code.model_lung_infection.InfNet_Res2Net import PraNetPlusPlus as Network
+from Code.model_lung_infection.InfNet_Res2Net import Inf_Net as Network
 from Code.utils.dataloader_LungInf import get_loader, test_dataset
 from Code.utils.utils import clip_gradient, adjust_lr, AvgMeter
 from Code.utils.format_conversion import binary2edge

@@ -1,3 +1,13 @@
+# -*- coding: utf-8 -*-
+
+"""Preview
+Code for 'Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans'
+submit to Transactions on Medical Imaging, 2020.
+
+First Version: Created on 2020-05-05 (@author: Ge-Peng Ji)
+Second Version: Fix some bugs and edit some parameters on 2020-05-15. (@author: Ge-Peng Ji)
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

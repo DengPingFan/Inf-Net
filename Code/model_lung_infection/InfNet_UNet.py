@@ -1,9 +1,18 @@
-""" Full assembly of the parts to form the complete network """
+# -*- coding: utf-8 -*-
+
+"""Preview
+Code for 'Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans'
+submit to Transactions on Medical Imaging, 2020.
+
+First Version: Created on 2020-05-05 (@author: Ge-Peng Ji)
+Second Version: Fix some bugs and edit some parameters on 2020-05-15. (@author: Ge-Peng Ji)
+"""
 
 from Code.model_lung_infection.module.unet_parts import *
 
 
 class Inf_Net_UNet(nn.Module):
+    """ Full assembly of the parts to form the complete network """
     def __init__(self, n_channels, n_classes, bilinear=True):
         super(Inf_Net_UNet, self).__init__()
         self.n_channels = n_channels

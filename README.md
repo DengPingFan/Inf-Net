@@ -1,4 +1,4 @@
-# Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans
+# Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Images
 
 > **Authors:** 
 > [Deng-Ping Fan](https://dpfan.net/), 
@@ -12,7 +12,7 @@
 
 ## 0. Preface
 
-- This repository provides code for "_**Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans**_" TMI-2020. 
+- This repository provides code for "_**Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Images**_" TMI-2020. 
 ([arXiv Pre-print](https://arxiv.org/abs/2004.14133) & [medrXiv](https://www.medrxiv.org/content/10.1101/2020.04.22.20074948v1))
 
 - If you have any questions about our paper, feel free to contact [Deng-Ping Fan](dengpfan@gmail.com) 
@@ -31,7 +31,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 ### 0.2. Table of Contents
 
-- [Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans](#inf-net--automatic-covid-19-lung-infection-segmentation-from-ct-scans)
+- [Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Images](#inf-net--automatic-covid-19-lung-infection-segmentation-from-ct-scans)
   * [0. Preface](#0-preface)
     + [0.1. :fire: NEWS :fire:](#01--fire--news--fire-)
     + [0.2. Table of Contents](#02-table-of-contents)
@@ -329,7 +329,7 @@ https://arxiv.org/pdf/2004.14133.pdf
 Please cite our paper if you find the work useful: 
 
 	@article{fan2020inf,
-  	title={Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans},
+  	title={Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Images},
   	author={Fan, Deng-Ping and Zhou, Tao and Ji, Ge-Peng and Zhou, Yi and Chen, Geng and Fu, Huazhu and Shen, Jianbing and Shao, Ling},
   	journal={IEEE TMI},
   	year={2020}

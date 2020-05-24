@@ -19,7 +19,7 @@
 or [Ge-Peng Ji](gepengai.ji@gmail.com) via E-mail. And if you are using COVID-SemiSeg Dataset, 
 Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX](#8-citation)).
 
-- We elaborately collect COVID-19 imaging-based AI research papers and datasets [awesome-list]((#6-paper-list-of-covid-19-related--update-continue-)).
+- We elaborately collect COVID-19 imaging-based AI research papers and datasets [awesome-list](https://github.com/HzFu/COVID19_imaging_AI_paper_list).
 
 ### 0.1. :fire: NEWS :fire:
 

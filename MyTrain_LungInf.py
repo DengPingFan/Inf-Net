@@ -101,7 +101,7 @@ if __name__ == '__main__':
                         help='decay rate of learning rate')
     parser.add_argument('--decay_epoch', type=int, default=50,
                         help='every n epochs decay learning rate')
-    parser.add_argument('--is_thop', type=bool, default=True,
+    parser.add_argument('--is_thop', type=bool, default=False,
                         help='whether calculate FLOPs/Params (Thop)')
     parser.add_argument('--gpu_device', type=int, default=0,
                         help='choose which GPU device you want to use')

@@ -137,7 +137,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 1. Test
     
     - When training is completed, the weights will be saved in `./Snapshots/save_weights/Inf-Net/`. 
-    You also can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=19p_G8NS4NwF4pZOEOX3w06ZLVh0rj3VW).
+    You can also directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=19p_G8NS4NwF4pZOEOX3w06ZLVh0rj3VW).
     
     - Assign the path `--pth_path` of trained weights and `--save_path` of results save and in `MyTest_LungInf.py`.
     

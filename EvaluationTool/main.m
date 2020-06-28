@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Evaluation tool boxs for ��Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans�� submit to Transactions on Medical Imaging2020.
+%Evaluation tool boxs for "Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans" submit to Transactions on Medical Imaging2020.
 %Author: Deng-Ping Fan, Tao Zhou, Ge-Peng Ji, Yi Zhou, Geng Chen, Huazhu Fu, Jianbing Shen, and Ling Shao
 %Homepage: http://dpfan.net/
 %Projectpage: https://github.com/DengPingFan/Inf-Net
 %First version: 2020-4-15
-%Any questions please contact with dengpingfan@nankai.edu.cn.
+%Any questions please contact with dengpfan@gmail.com.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Function: Providing several important metrics: Dice, IoU, F1, S-m (ICCV'17), 
 %          E-m (IJCAI'18), Precision, Recall, Sensitivity, Specificity, MAE.

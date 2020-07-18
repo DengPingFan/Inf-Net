@@ -85,7 +85,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
     Our proposed methods consist of three individual components under three different settings: 
 
-    - Inf-Net (Supervised Learning with segmentation and edge supervision).
+    - Inf-Net (Supervised Learning with segmentation).
     
     - Semi-Inf-Net (Semi-supervised learning with doctor label and pseudo label)
     

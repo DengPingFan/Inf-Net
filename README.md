@@ -378,6 +378,8 @@ etc.)
 
     [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
 
----
+2. I tested the U-Net, however, the Dice score are different from the results in TABLE II (Page 8 on our manuscript)?
+   Note that, the our Dice score is the mean dice score rather than the max Dice score. You can use our evaluation tool box [Google Drive](https://drive.google.com/open?id=1BGUUmrRPOWPxdxnawFnG9TVZd8rwLqCF). 
+   The training set of each compared model (e.g., U-Net, Attention-UNet, Gated-UNet, Dense-UNet, U-Net++, Inf-Net (ours)) is the 48 images rather than 48 image+1600 images.
 
 **[⬆ back to top](#0-preface)**

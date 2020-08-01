@@ -346,7 +346,7 @@ or any Content, or any work product or data derived therefrom, for commercial pu
 
 ## 10. Acknowledgements
  
-We would like to thank [xxx]() for their contributions.
+We would like to thank the whole organizing committee for considering the publication of our paper in this special issue (Special Issue on Imaging-Based Diagnosis of COVID-19) of IEEE Transactions on Medical Imaging. More papers refer to [Link](https://ieeexplore.ieee.org/document/9098956?source=authoralert).
 
 ## 11. TODO LIST
 

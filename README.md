@@ -131,8 +131,9 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 1. Train
 
-    - Turn off the semi-supervised mode (`--is_semi=False`) turn off the flag of whether use pseudo labels
-     (`--is_pseudo=False`) in the parser of `MyTrain_LungInf.py` and just run it!
+    - We provide multiple backbone versions (see this [line](https://github.com/DengPingFan/Inf-Net/blob/0df52ec8bb75ef468e9ceb7c43a41b0886eced3a/MyTrain_LungInf.py#L133)) in the training phase, i.e., ResNet, Res2Net, and VGGNet, but we only provide the Res2Net version in the Semi-Inf-Net. Also, you can try other backbones you preferred, but the pseudo labels should be RE-GENERATED with corresponding backbone.
+    
+    - Turn off the semi-supervised mode (`--is_semi=False`) turn off the flag of whether use pseudo labels (`--is_pseudo=False`) in the parser of `MyTrain_LungInf.py` and just run it! (see this [line](https://github.com/DengPingFan/Inf-Net/blob/0df52ec8bb75ef468e9ceb7c43a41b0886eced3a/MyTrain_LungInf.py#L121))
 
 1. Test
     

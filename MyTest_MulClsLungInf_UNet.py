@@ -12,7 +12,7 @@ import numpy as np
 from Code.utils.dataloader_MulClsLungInf_UNet import LungDataset
 from torchvision import transforms
 from torch.utils.data import DataLoader
-from Code.model_lung_infection.InfNet_UNet import *  # 当前用的UNet模型
+from Code.model_lung_infection.InfNet_UNet import *  # use U-Net for multi-class segmentation
 from scipy import misc
 from Code.utils.split_class import split_class
 import shutil
@@ -21,11 +21,12 @@ import shutil
 def inference(num_classes, input_channels, snapshot_dir, save_path):
     test_dataset = LungDataset(
         imgs_path='./Dataset/TestingSet/MultiClassInfection-Test/Imgs/',
-        pseudo_path='./Results/Lung infection segmentation/Semi-Inf-Net/',  # NOTES: generated from Semi-Inf-Net
+        pseudo_path='./Results/Lung infection segmentation/Semi-Inf-Net/',  # NOTES: generated from `Semi-Inf-Net`
         label_path='./Dataset/TestingSet/MultiClassInfection-Test/GT/',
         transform=transforms.Compose([
             transforms.ToTensor(),
-            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])]),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], 
+                                 std=[0.229, 0.224, 0.225])]),
         is_test=True
     )
     test_dataloader = DataLoader(test_dataset, batch_size=1, shuffle=False, num_workers=0)

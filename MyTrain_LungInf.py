@@ -129,7 +129,7 @@ if __name__ == '__main__':
 
     # ---- build models ----
     torch.cuda.set_device(opt.gpu_device)
-
+    # - please asign your prefer backbone in opt.
     if opt.backbone == 'Res2Net50':
         print('Backbone loading: Res2Net50')
         from Code.model_lung_infection.InfNet_Res2Net import Inf_Net

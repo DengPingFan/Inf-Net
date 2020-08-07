@@ -23,7 +23,7 @@ def inference():
     parser.add_argument('--data_path', type=str, default='./Dataset/TestingSet/LungInfection-Test/',
                         help='Path to test data')
     parser.add_argument('--pth_path', type=str, default='./Snapshots/save_weights/Semi-Inf-Net/Semi-Inf-Net-100.pth',
-                        help='Path to weights fileif `semi-sup`, edit it to `Semi-Inf-Net/Semi-Inf-Net-100.pth`')
+                        help='Path to weights file. If `semi-sup`, edit it to `Semi-Inf-Net/Semi-Inf-Net-100.pth`')
     parser.add_argument('--save_path', type=str, default='./Results/Lung infection segmentation/Semi-Inf-Net/',
                         help='Path to save the predictions. if `semi-sup`, edit it to `Semi-Inf-Net`')
     opt = parser.parse_args()

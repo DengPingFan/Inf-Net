@@ -57,6 +57,7 @@ def inference(num_classes, input_channels, snapshot_dir, save_path):
         split_class(save_path, name[0].replace('.jpg', '.png'), w_gt, h_gt)
 
     shutil.rmtree(save_path)
+    print('Test done!')
 
 
 if __name__ == "__main__":

@@ -32,7 +32,7 @@ def inference():
                     "Infection Segmentation from CT Scans', 2020, arXiv.\n"
                     "----\nPlease cite the paper if you use this code and dataset. "
                     "And any questions feel free to contact me "
-                    "via E-mail (gepengai.ji@163.com)\n----\n".format(opt.backbone, opt), "#" * 20)
+                    "via E-mail (gepengai.ji@gmial.com)\n----\n".format(opt), "#" * 20)
 
     model = Network()
     # model = torch.nn.DataParallel(model, device_ids=[0, 1]) # uncomment it if you have multiply GPUs.

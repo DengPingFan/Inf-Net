@@ -113,7 +113,7 @@ if __name__ == '__main__':
                         help='internal channel numbers in the Inf-Net, default=32, try larger for better accuracy')
     parser.add_argument('--n_classes', type=int, default=1,
                         help='binary segmentation when n_classes=1')
-    parser.add_argument('--backbone', type=str, default='ResNet50',
+    parser.add_argument('--backbone', type=str, default='Res2Net50',
                         help='change different backbone, choice: VGGNet16, ResNet50, Res2Net50')
     # training dataset
     parser.add_argument('--train_path', type=str,

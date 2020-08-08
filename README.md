@@ -120,7 +120,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 #### 2.1.1 Overview
 
 <p align="center">
-    <img src="Imgs/Inf-Net.png"/> <br />
+    <img src="http://dpfan.net/wp-content/uploads/Inf-Net.png"/> <br />
     <em> 
     Figure 2. The architecture of our proposed Inf-Net model, which consists of three reverse attention 
     (RA) modules connected to the paralleled partial decoder (PPD).

@@ -70,7 +70,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 ### 1.1. Task Descriptions
 
 <p align="center">
-    <img src="Image/COVID'19-Infection.png"/> <br />
+    <img src="Images/COVID'19-Infection.png"/> <br />
     <em> 
     Figure 1. Example of COVID-19 infected regions in CT axial slice, where the red and green masks denote the 
     ground-glass opacity (GGO) and consolidation, respectively. The images are collected from [1].

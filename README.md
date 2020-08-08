@@ -223,12 +223,9 @@ More details can be found in our paper.
 
 1. Test
     
-    - When training is completed, the weights will be saved in `./Snapshots/save_weights/Semi-Inf-Net_UNet/`. 
-    You also can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=1V4VJl5X4kJVD6HHWYsGzbrbPh8Q_Vc0I).
+    - When training is completed, the weights will be saved in `./Snapshots/save_weights/Semi-Inf-Net_UNet/`. Also, you can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=1V4VJl5X4kJVD6HHWYsGzbrbPh8Q_Vc0I).
     
-    - Assigning the path of weights in parameters `snapshot_dir` and run `MyTest_MulClsLungInf_UNet.py`. 
-    All the predictions will be saved in `./Results/Multi-class lung infection segmentation/Consolidation` and 
-    `./Results/Multi-class lung infection segmentation/Ground-glass opacities`.
+    - Assigning the path of weights in parameters `snapshot_dir` and run `MyTest_MulClsLungInf_UNet.py`. All the predictions will be saved in `./Results/Multi-class lung infection segmentation/Consolidation` and `./Results/Multi-class lung infection segmentation/Ground-glass opacities`.
 
 ## 3. Evaluation Toolbox
 

@@ -109,7 +109,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
     Note that Inf-Net series is only tested on Ubuntu OS 16.04 with the following environments (CUDA-10.0). 
     It may work on other operating systems as well but we do not guarantee that it will.
     
-    + Creating a virtual environment in terminal: `conda create -n SINet python=3.6`.
+    + Creating a virtual environment in terminal: `conda create -n Inf-Net python=3.6`.
     
     + Installing necessary packages: `pip install -r requirements.txt`.
     

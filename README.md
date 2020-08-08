@@ -67,7 +67,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 ## 1. Introduction
 
-### 1.1. Task Description
+### 1.1. Task Descriptions
 
 <p align="center">
     <img src="Imgs/COVID'19-Infection.png"/> <br />
@@ -85,7 +85,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
     Our proposed methods consist of three individual components under three different settings: 
 
-    - Inf-Net (Supervised Learning with segmentation).
+    - Inf-Net (Supervised learning with segmentation).
     
     - Semi-Inf-Net (Semi-supervised learning with doctor label and pseudo label)
     
@@ -184,8 +184,8 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
     
     - When training is completed, the weights (trained on pseudo-label) will be saved in `./Snapshots/save_weights/Inf-Net_Pseduo/Inf-Net_pseudo_100.pth`. Also, you can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=1NMM0BoVJU9DS8u4yTG0L-V_mcHKajrmN). Now we have prepared the weights that is pre-trained on 1600 images with pseudo labels. Please note that these valuable images/labels can promote the performance and the stability of training process, because of ImageNet pre-trained models are just design for general object classification/detection/segmentation tasks initially.
     
-    - Secondly, turn on the semi-supervised mode (`--is_semi=True`) and turn off the flag of whether use pseudo labels
-     (`--is_pseudo=False`) in the parser of `MyTrain_LungInf.py` and modify the path train data to the doctor-label 
+    - Secondly, turn on the semi-supervised mode (`--is_semi=True`) and turn off the flag of whether using pseudo labels
+     (`--is_pseudo=False`) in the parser of `MyTrain_LungInf.py` and modify the path of training data to the doctor-label (50 images)
      repository (`--train_path='Dataset/TrainingSet/LungInfection-Train/Doctor-label'`). Just run it.
 
 1. Test
@@ -195,7 +195,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
     
     - Assign the path `--pth_path` of trained weights and `--save_path` of results save and in `MyTest_LungInf.py`.
     
-    - Just run it and results will be saved in `./Results/Lung infection segmentation/Semi-Inf-Net`
+    - Just run it! And results will be saved in `./Results/Lung infection segmentation/Semi-Inf-Net`.
 
 ### 2.3. Semi-Inf-Net + Multi-class UNet
 

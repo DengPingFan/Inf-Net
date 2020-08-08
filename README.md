@@ -109,7 +109,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
     Note that Inf-Net series is only tested on Ubuntu OS 16.04 with the following environments (CUDA-10.0). 
     It may work on other operating systems as well but we do not guarantee that it will.
     
-    + Creating a virtual environment in terminal: `conda create -n Inf-Net python=3.6`.
+    + Creating a virtual environment in terminal: `conda create -n SINet python=3.6`.
     
     + Installing necessary packages: `pip install -r requirements.txt`.
     
@@ -160,8 +160,8 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 1. Data Preparation for pseudo-label generation. (Optional)
     
     - Dividing the 1600 unlabeled image into 320 groups (1600/K groups, we set K=5 in our implementation), 
-    in which images with `*.jgp` format can be found in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Imgs/`. 
-    (I suppose you have download all the train/test images following the instructions [above](#2-proposed-methods))
+    in which images with `*.jpg` format can be found in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Imgs/`. 
+    (I suppose you have downloaded all the train/test images following the instructions [above](#2-proposed-methods))
     Then you only just run the code stored in `./SrcCode/utils/split_1600.py` to split it into multiple sub-dataset, 
     which are used in the training process of pseudo-label generation. The 1600/K sub-datasets will be saved in 
     `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/DataPrepare/Imgs_split/`

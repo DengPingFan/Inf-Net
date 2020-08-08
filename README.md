@@ -177,17 +177,14 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
     - When training is completed, the images with pseudo labels will be saved in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/`.
 
 1. Train
-    
-    - Now we have prepared the weights (`Inf-Net_pseudo_100.pth`) that is pre-trained on 1600 images with pseudo labels. 
-    Note that these valuable images/labels can promote the performance and the stability of training process, because of 
-    ImageNet pre-trained models are just design for general object classification/detection/segmentation tasks initially.
-    
+
     - Firstly, turn off the semi-supervised mode (`--is_semi=False`) and turn on the flag of whether use pseudo labels
      (`--is_pseudo=True`) in the parser of `MyTrain_LungInf.py` and modify the path train data to the pseudo-label 
      repository (`--train_path='Dataset/TrainingSet/LungInfection-Train/Pseudo-label'`). Just run it.
     
     - When training is completed, the weights (trained on pseudo-label) will be saved in `./Snapshots/save_weights/Inf-Net_Pseduo/`. 
-    You also can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=1NMM0BoVJU9DS8u4yTG0L-V_mcHKajrmN).
+    Also, you can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=1NMM0BoVJU9DS8u4yTG0L-V_mcHKajrmN).
+    Now we have prepared the weights (`Inf-Net_pseudo_100.pth`) that is pre-trained on 1600 images with pseudo labels. Note that these valuable images/labels can promote the performance and the stability of training process, because of ImageNet pre-trained models are just design for general object classification/detection/segmentation tasks initially.
     
     - Secondly, turn on the semi-supervised mode (`--is_semi=True`) and turn off the flag of whether use pseudo labels
      (`--is_pseudo=False`) in the parser of `MyTrain_LungInf.py` and modify the path train data to the doctor-label 

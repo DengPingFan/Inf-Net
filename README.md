@@ -70,7 +70,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 ### 1.1. Task Descriptions
 
 <p align="center">
-    <img src="Images/COVID'19-Infection.png"/> <br />
+    <img src="http://dpfan.net/wp-content/uploads/COVID19-Infection-1.png"/> <br />
     <em> 
     Figure 1. Example of COVID-19 infected regions in CT axial slice, where the red and green masks denote the 
     ground-glass opacity (GGO) and consolidation, respectively. The images are collected from [1].
@@ -149,7 +149,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 #### 2.2.1. Overview
 
 <p align="center">
-    <img src="Imgs/Semi-InfNet.png"/> <br />
+    <img src="http://dpfan.net/wp-content/uploads/Semi-InfNet.png"/> <br />
     <em> 
     Figure 3. Overview of the proposed Semi-supervised Inf-Net framework.
     </em>
@@ -206,7 +206,7 @@ original design of UNet that is used for binary segmentation, and thus, we name 
 More details can be found in our paper.
 
 <p align="center">
-    <img src="Imgs/MultiClassExtension.png"/> <br />
+    <img src="http://dpfan.net/wp-content/uploads/MultiClassInfectionSeg.png"/> <br />
     <em> 
     Figure 3. Overview of the proposed Semi-supervised Inf-Net framework.
     </em>
@@ -291,14 +291,14 @@ Multi-class lung infection segmentation can be downloaded from this [link](http:
 ## 5. Visualization Results:
 
 <p align="center">
-    <img src="Imgs/InfectionSeg.png"/> <br />
+    <img src="http://dpfan.net/wp-content/uploads/InfectionSeg.png"/> <br />
     <em> 
     Figure 4. Visual comparison of lung infection segmentation results.
     </em>
 </p>
 
 <p align="center">
-    <img src="Imgs/MultiClassInfectionSeg.png"/> <br />
+    <img src="http://dpfan.net/wp-content/uploads/MultiClassInfectionSeg.png"/> <br />
     <em> 
     Figure 5. Visual comparison of multi-class lung infection segmentation results, where the red and green labels 
     indicate the GGO and consolidation, respectively.
@@ -310,7 +310,7 @@ Multi-class lung infection segmentation can be downloaded from this [link](http:
 > Ori GitHub Link: https://github.com/HzFu/COVID19_imaging_AI_paper_list
 
 <p align="center">
-    <img src="Imgs/paper-list-cover.png"/> <br />
+    <img src="http://dpfan.net/wp-content/uploads/paper-list-cover.png"/> <br />
     <em> 
     Figure 6. This is a collection of COVID-19 imaging-based AI research papers and datasets.
     </em>

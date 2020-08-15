@@ -12,7 +12,7 @@
 
 ## 0. Preface
 
-- This repository provides code for "_**Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans**_" submit to TMI-2020. 
+- This repository provides code for "_**Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans**_" accepted by TMI-2020. 
 ([arXiv Pre-print](https://arxiv.org/abs/2004.14133) & [medrXiv](https://www.medrxiv.org/content/10.1101/2020.04.22.20074948v1))
 
 - If you have any questions about our paper, feel free to contact [Deng-Ping Fan](dengpfan@gmail.com) 
@@ -22,6 +22,10 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 - We elaborately collect COVID-19 imaging-based AI research papers and datasets [awesome-list]((#6-paper-list-of-covid-19-related--update-continue-)).
 
 ### 0.1. :fire: NEWS :fire:
+
+- [2020/08/15] Optimizing the testing code, now you can test the custom data without `gt_path`
+
+- [2020/05/15] Our paper is accepted for publication in IEEE TMI
 
 - [2020/05/13] :boom: Upload pre-trained weights. (Uploaded by Ge-Peng Ji)
 

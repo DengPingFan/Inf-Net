@@ -32,28 +32,28 @@ def inference():
                     "Infection Segmentation from CT Scans', 2020, arXiv.\n"
                     "----\nPlease cite the paper if you use this code and dataset. "
                     "And any questions feel free to contact me "
-                    "via E-mail (gepengai.ji@gmial.com)\n----\n".format(opt), "#" * 20)
+                    "via E-mail (gepengai.ji@gamil.com)\n----\n".format(opt), "#" * 20)
 
     model = Network()
     # model = torch.nn.DataParallel(model, device_ids=[0, 1]) # uncomment it if you have multiply GPUs.
-    model.load_state_dict(torch.load(opt.pth_path))
+    model.load_state_dict(torch.load(opt.pth_path, map_location={'cuda:1':'cuda:0'}))
     model.cuda()
     model.eval()
 
     image_root = '{}/Imgs/'.format(opt.data_path)
-    gt_root = '{}/GT/'.format(opt.data_path)
-    test_loader = test_dataset(image_root, gt_root, opt.testsize)
+    # gt_root = '{}/GT/'.format(opt.data_path)
+    test_loader = test_dataset(image_root, opt.testsize)
     os.makedirs(opt.save_path, exist_ok=True)
 
     for i in range(test_loader.size):
-        image, gt, name = test_loader.load_data()
-        gt = np.asarray(gt, np.float32)
-        gt /= (gt.max() + 1e-8)
+        image, name = test_loader.load_data()
+
         image = image.cuda()
 
         lateral_map_5, lateral_map_4, lateral_map_3, lateral_map_2, lateral_edge = model(image)
+
         res = lateral_map_2
-        res = F.upsample(res, size=gt.shape, mode='bilinear', align_corners=False)
+        # res = F.upsample(res, size=(ori_size[1],ori_size[0]), mode='bilinear', align_corners=False)
         res = res.sigmoid().data.cpu().numpy().squeeze()
         res = (res - res.min()) / (res.max() - res.min() + 1e-8)
         misc.imsave(opt.save_path + name, res)

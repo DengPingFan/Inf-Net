@@ -2,8 +2,254 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70645ccf-d112-42c5-b376-c6624bbb4cd6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Inf-Net.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Inf-Net.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/model_lung_infection/backbone/Res2Net.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/model_lung_infection/backbone/Res2Net.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/utils/dataloader_LungInf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/utils/dataloader_LungInf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTest_LungInf.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest_LungInf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Inf-Net/99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Lung infection segmentation/Semi-Inf-Net/99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Consolidation/Semi-Inf-Net_UNet/99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/Ground-glass opacities/Semi-Inf-Net_UNet/99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Multi-class lung infection segmentation/class_12/99.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +274,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SINet" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="D:/1-ResearchFile/0_MyPaper/[2020-ACMMM]CamouflageObjectDetection/Benchmark/Code" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -57,7 +303,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tmp">
+  <component name="RunManager" selected="Python.MyTest_LungInf">
+    <configuration name="MyTest_LungInf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Inf-Net" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyTest_LungInf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="MyTrain_LungInf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Inf-Net" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,6 +340,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyTrain_LungInf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dataloader_LungInf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Inf-Net" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/utils/dataloader_LungInf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,6 +416,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MyTest_LungInf" />
+        <item itemvalue="Python.dataloader_LungInf" />
         <item itemvalue="Python.tmp" />
         <item itemvalue="Python.MyTrain_LungInf" />
         <item itemvalue="Python.split_1600" />
@@ -156,6 +448,11 @@
       <workItem from="1589356542236" duration="629000" />
       <workItem from="1589357658220" duration="2026000" />
       <workItem from="1589366452976" duration="476000" />
+      <workItem from="1589367160205" duration="213000" />
+      <workItem from="1589467344066" duration="345000" />
+      <workItem from="1589555528894" duration="696000" />
+      <workItem from="1589601619970" duration="163000" />
+      <workItem from="1597473166908" duration="5060000" />
     </task>
     <servers />
   </component>
@@ -178,9 +475,22 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MyTest_LungInf.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Inf_Net$tmp.coverage" NAME="tmp Coverage Results" MODIFIED="1589296271031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Inf_Net$split_1600.coverage" NAME="split_1600 Coverage Results" MODIFIED="1589203343852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/Inf_Net$dataloader_LungInf.coverage" NAME="dataloader_LungInf Coverage Results" MODIFIED="1597474640890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Code/utils" />
+    <SUITE FILE_PATH="coverage/Inf_Net$MyTest_LungInf.coverage" NAME="MyTest_LungInf Coverage Results" MODIFIED="1597478035691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Inf_Net$MyTrain_LungInf.coverage" NAME="MyTrain_LungInf Coverage Results" MODIFIED="1589295867710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

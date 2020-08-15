@@ -22,6 +22,10 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 ### 0.1. :fire: NEWS :fire:
 
+- [2020/08/15] Optimizing the testing code, now you can test the custom data without `gt_path`
+
+- [2020/05/15] Our paper is accepted for publication in IEEE TMI
+
 - [2020/05/13] :boom: Upload pre-trained weights. (Uploaded by Ge-Peng Ji)
 
 - [2020/05/12] :boom: Release training/testing/evaluation code. (Updated by Ge-Peng Ji)

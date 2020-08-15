@@ -4,7 +4,8 @@
 Code for 'Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Scans'
 submit to Transactions on Medical Imaging, 2020.
 
-First Version: Created on 2020-05-13 (@author: Ge-Peng Ji)
+1st Version: Created on 2020-05-13 (@author: Ge-Peng Ji)
+2nd Version: Fix some bugs caused by THOP on 2020-06-10 (@author: Ge-Peng Ji)
 """
 
 import torch
@@ -101,7 +102,7 @@ if __name__ == '__main__':
                         help='decay rate of learning rate')
     parser.add_argument('--decay_epoch', type=int, default=50,
                         help='every n epochs decay learning rate')
-    parser.add_argument('--is_thop', type=bool, default=True,
+    parser.add_argument('--is_thop', type=bool, default=False,
                         help='whether calculate FLOPs/Params (Thop)')
     parser.add_argument('--gpu_device', type=int, default=0,
                         help='choose which GPU device you want to use')
@@ -112,7 +113,7 @@ if __name__ == '__main__':
                         help='internal channel numbers in the Inf-Net, default=32, try larger for better accuracy')
     parser.add_argument('--n_classes', type=int, default=1,
                         help='binary segmentation when n_classes=1')
-    parser.add_argument('--backbone', type=str, default='ResNet50',
+    parser.add_argument('--backbone', type=str, default='Res2Net50',
                         help='change different backbone, choice: VGGNet16, ResNet50, Res2Net50')
     # training dataset
     parser.add_argument('--train_path', type=str,
@@ -128,7 +129,7 @@ if __name__ == '__main__':
 
     # ---- build models ----
     torch.cuda.set_device(opt.gpu_device)
-
+    # - please asign your prefer backbone in opt.
     if opt.backbone == 'Res2Net50':
         print('Backbone loading: Res2Net50')
         from Code.model_lung_infection.InfNet_Res2Net import Inf_Net

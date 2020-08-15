@@ -21,6 +21,8 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 - We elaborately collect COVID-19 imaging-based AI research papers and datasets [awesome-list](https://github.com/HzFu/COVID19_imaging_AI_paper_list).
 
 ### 0.1. :fire: NEWS :fire:
+- [2020/08/15] Updateing the equation (2) in our manuscript. 
+  R_i = C(f_i, Dow(e_att))  A_i -> R_i = C(f_i, Dow(e_att))  A_i;
 
 - [2020/08/15] Optimizing the testing code, now you can test the custom data without `gt_path`
 

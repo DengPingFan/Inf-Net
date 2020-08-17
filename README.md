@@ -22,7 +22,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 ### 0.1. :fire: NEWS :fire:
 - [2020/08/15] Updating the equation (2) in our manuscript. <br>
-  R_i = C(f_i, Dow(e_att)) * A_i -> R_i = C(f_i, Dow(e_att)) * A_i;
+  R_i = C(f_i, Dow(e_att)) * A_i -> R_i = C(f_i * A_i, Dow(e_{att}));
 
 - [2020/08/15] Optimizing the testing code, now you can test the custom data without `gt_path`
 

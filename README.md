@@ -21,6 +21,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 - We elaborately collect COVID-19 imaging-based AI research papers and datasets [awesome-list](https://github.com/HzFu/COVID19_imaging_AI_paper_list).
 
 ### 0.1. :fire: NEWS :fire:
+- [2020/10/25] Uploading [中文翻译版](http://dpfan.net/wp-content/uploads/TMI20_InfNet_Chinese_Finalv2.pdf).
 - [2020/10/14] Updating the legend (1 * 1 -> 3 * 3; 3 * 3 -> 1 * 1) of Fig.3 in our manuscript. 
 - [2020/08/15] Updating the equation (2) in our manuscript. <br>
   R_i = C(f_i, Dow(e_att)) * A_i -> R_i = C(f_i * A_i, Dow(e_{att}));

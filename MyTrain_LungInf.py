@@ -184,10 +184,10 @@ if __name__ == '__main__':
 
     # ---- start !! -----
     print("#"*20, "\nStart Training (Inf-Net-{})\n{}\nThis code is written for 'Inf-Net: Automatic COVID-19 Lung "
-                  "Infection Segmentation from CT Scans', 2020, arXiv.\n"
+                  "Infection Segmentation from CT Scans', 2020, TMI.\n"
                   "----\nPlease cite the paper if you use this code and dataset. "
                   "And any questions feel free to contact me "
-                  "via E-mail (gepengai.ji@163.com)\n----\n".format(opt.backbone, opt), "#"*20)
+                  "via E-mail (gepengai.ji@gmail.com)\n----\n".format(opt.backbone, opt), "#"*20)
 
     for epoch in range(1, opt.epoch):
         adjust_lr(optimizer, opt.lr, epoch, opt.decay_rate, opt.decay_epoch)

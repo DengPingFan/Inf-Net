@@ -38,10 +38,10 @@ def train(epo_num, num_classes, input_channels, batch_size, lr, save_path):
     optimizer = optim.SGD(lung_model.parameters(), lr=lr, momentum=0.7)
 
     print("#" * 20, "\nStart Training (Inf-Net)\nThis code is written for 'Inf-Net: Automatic COVID-19 Lung "
-                    "Infection Segmentation from CT Scans', 2020, arXiv.\n"
+                    "Infection Segmentation from CT Scans', 2020, TMI.\n"
                     "----\nPlease cite the paper if you use this code and dataset. "
                     "And any questions feel free to contact me "
-                    "via E-mail (gepengai.ji@163.com)\n----\n", "#" * 20)
+                    "via E-mail (gepengai.ji@gmail.com)\n----\n", "#" * 20)
 
     for epo in range(epo_num):
 

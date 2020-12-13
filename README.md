@@ -25,15 +25,10 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 - [2020/10/14] Updating the legend (1 * 1 -> 3 * 3; 3 * 3 -> 1 * 1) of Fig.3 in our manuscript. 
 - [2020/08/15] Updating the equation (2) in our manuscript. <br>
   R_i = C(f_i, Dow(e_att)) * A_i -> R_i = C(f_i * A_i, Dow(e_{att}));
-
 - [2020/08/15] Optimizing the testing code, now you can test the custom data without `gt_path`
-
 - [2020/05/15] Our paper is accepted for publication in IEEE TMI
-
 - [2020/05/13] :boom: Upload pre-trained weights. (Uploaded by Ge-Peng Ji)
-
 - [2020/05/12] :boom: Release training/testing/evaluation code. (Updated by Ge-Peng Ji)
-
 - [2020/05/01] Create repository.
 
 ### 0.2. Table of Contents

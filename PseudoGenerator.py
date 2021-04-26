@@ -146,15 +146,15 @@ def inference_module(_data_path, _save_path, _pth_path):
     test_loader = test_dataset(image_root, image_root, 352)
 
     for i in range(test_loader.size):
-        image, gt, name = test_loader.load_data()
-        gt = np.asarray(gt, np.float32)
-        gt /= (gt.max() + 1e-8)
+        image, name = test_loader.load_data()
+        #gt = np.asarray(gt, np.float32)
+        #gt /= (gt.max() + 1e-8)
         image = image.cuda()
 
         lateral_map_5, lateral_map_4, lateral_map_3, lateral_map_2, lateral_edge = model(image)
 
         res = lateral_map_2  # final segmentation
-        res = F.upsample(res, size=gt.shape, mode='bilinear', align_corners=False)
+        #res = F.upsample(res, size=gt.shape, mode='bilinear', align_corners=False)
         res = res.sigmoid().data.cpu().numpy().squeeze()
         res = (res - res.min()) / (res.max() - res.min() + 1e-8)
         misc.imsave(_save_path + '/' + name, res)

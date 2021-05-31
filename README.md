@@ -339,10 +339,11 @@ Please cite our paper if you find the work useful:
  
 ## 9. LICENSE
 
-- The **COVID-SemiSeg Dataset** is made available for non-commercial purposes only.
+- The **COVID-SemiSeg Dataset** is made available for non-commercial purposes only. Any comercial use should get formal permission first.
 
 - You will not, directly or indirectly, reproduce, use, or convey the **COVID-SemiSeg Dataset** 
 or any Content, or any work product or data derived therefrom, for commercial purposes.
+
 
 ## 10. Acknowledgements
  

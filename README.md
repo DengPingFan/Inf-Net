@@ -330,12 +330,17 @@ https://arxiv.org/pdf/2004.14133.pdf
 
 Please cite our paper if you find the work useful: 
 
-	@article{fan2020inf,
-  	title={Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Images},
-  	author={Fan, Deng-Ping and Zhou, Tao and Ji, Ge-Peng and Zhou, Yi and Chen, Geng and Fu, Huazhu and Shen, Jianbing and Shao, Ling},
-  	journal={IEEE TMI},
-  	year={2020}
+	@article{fan2020infnet,
+	  author={Fan, Deng-Ping and Zhou, Tao and Ji, Ge-Peng and Zhou, Yi and Chen, Geng and Fu, Huazhu and Shen, Jianbing and Shao, Ling},
+	  journal={IEEE Transactions on Medical Imaging}, 
+	  title={Inf-Net: Automatic COVID-19 Lung Infection Segmentation From CT Images}, 
+	  year={2020},
+	  volume={39},
+	  number={8},
+	  pages={2626-2637},
+	  doi={10.1109/TMI.2020.2996645}
 	}
+
  
 ## 9. LICENSE
 

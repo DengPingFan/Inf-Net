@@ -1,7 +1,7 @@
 # Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Images
 
 > **Authors:** 
-> [Deng-Ping Fan](https://dpfan.net/), 
+> [Deng-Ping Fan](https://dengpingfan.github.io/), 
 > [Tao Zhou](https://taozh2017.github.io/), 
 > [Ge-Peng Ji](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
 > [Yi Zhou](https://scholar.google.com/citations?hl=zh-CN&user=EnDCJKMAAAAJ), 

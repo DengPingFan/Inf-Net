@@ -21,6 +21,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 - We elaborately collect COVID-19 imaging-based AI research papers and datasets [awesome-list](https://github.com/HzFu/COVID19_imaging_AI_paper_list).
 
 ### 0.1. :fire: NEWS :fire:
+- [2022/04/08] :boom: We release a new large-scale dataset on **Video Polyp Segmentation (VPS)** task, please enjoy it. [ProjectLink](https://github.com/GewelsJI/VPS)/ [PDF](https://arxiv.org/abs/2203.14291).
 - [2021/04/15] Update the results on multi-class segmentation task, including 'Semi-Inf-Net & FCN8s' and 'Semi-Inf-Net & MC'. (Download link: [Google Drive](https://drive.google.com/file/d/1mIA9ggiftwhdzSAMl2sIAl3rkupt2_AY/view?usp=sharing))
 - [2020/10/25] Uploading [中文翻译版](http://dpfan.net/wp-content/uploads/TMI20_InfNet_Chinese_Finalv2.pdf).
 - [2020/10/14] Updating the legend (1 * 1 -> 3 * 3; 3 * 3 -> 1 * 1) of Fig.3 in our manuscript. 

@@ -23,7 +23,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 ### 0.1. :fire: NEWS :fire:
 - [2022/04/08] :boom: We release a new large-scale dataset on **Video Polyp Segmentation (VPS)** task, please enjoy it. [ProjectLink](https://github.com/GewelsJI/VPS)/ [PDF](https://arxiv.org/abs/2203.14291).
 - [2021/04/15] Update the results on multi-class segmentation task, including 'Semi-Inf-Net & FCN8s' and 'Semi-Inf-Net & MC'. (Download link: [Google Drive](https://drive.google.com/file/d/1mIA9ggiftwhdzSAMl2sIAl3rkupt2_AY/view?usp=sharing))
-- [2020/10/25] Uploading [中文翻译版](http://dpfan.net/wp-content/uploads/TMI20_InfNet_Chinese_Finalv2.pdf).
+- [2020/10/25] Uploading [中文翻译版](https://dengpingfan.github.io/papers/[2020][TMI]InfNet_Chinese.pdf).
 - [2020/10/14] Updating the legend (1 * 1 -> 3 * 3; 3 * 3 -> 1 * 1) of Fig.3 in our manuscript. 
 - [2020/08/15] Updating the equation (2) in our manuscript. <br>
   R_i = C(f_i, Dow(e_att)) * A_i -> R_i = C(f_i * A_i, Dow(e_{att}));

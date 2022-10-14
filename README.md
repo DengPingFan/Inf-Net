@@ -288,13 +288,11 @@ consolidation infections are accurately segmented by Semi-Inf-Net & FCN8s, which
 our model. In contrast, the baseline methods, DeepLabV3+ with different strides and FCNs, all obtain unsatisfactory 
 results, where neither GGO and consolidation infections can be accurately segmented.
 
-Overall results can be downloaded from this [link](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EUdCgZGCDPRGsc8YQgfFz9EBMN1hTF6SvVMMUkumr_SqOQ?e=nxbFSL).
-
 ### 4.1. Download link:
 
 Lung infection segmentation results can be downloaded from this [link](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EU4MU-DHvzZFuX1SRw3vwOwBSQsf2K4VsNrL-Vurc0KM8Q?e=EWWXI7)
 
-Multi-class lung infection segmentation can be downloaded from this [link](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/ESkMrO7EvfVJvlyn9xKiQzsBepqqTc-Z2xR8PrzXpfc_-w?e=KlI6vk)
+Multi-class lung infection segmentation can be downloaded from this [link](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EannSF0mFIxImTuzqbAZ3-gBusy6luZ23NFhTiT4Xsib6g?e=nfTc7x)
 
 ## 5. Visualization Results:
 

@@ -24,8 +24,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 - [2022/04/08] :boom: We release a new large-scale dataset on **Video Polyp Segmentation (VPS)** task, please enjoy it. [ProjectLink](https://github.com/GewelsJI/VPS)/ [PDF](https://arxiv.org/abs/2203.14291).
 - [2021/04/15] Update the results on multi-class segmentation task, including 'Semi-Inf-Net & FCN8s' and 'Semi-Inf-Net & MC'. (Download link: [Google Drive](https://drive.google.com/file/d/1mIA9ggiftwhdzSAMl2sIAl3rkupt2_AY/view?usp=sharing))
 - [2020/10/25] Uploading [中文翻译版](https://dengpingfan.github.io/papers/[2020][TMI]InfNet_Chinese.pdf).
-- [2020/10/14] Updating the legend (1 * 1 -> 3 * 3; 3 * 3 -> 1 * 1) of Fig.3 in our manuscript. 
-- [2020/08/15] Updating the equation (2) in our manuscript. <br>
+- [2020/10/14] Updating the legend (1 * 1 -> 3 * 3; 3 * 3 -> 1 * 1) of Fig.3 in our manuscript. 2020/08/15 Updating equation (2) in our manuscript. <br>
   R_i = C(f_i, Dow(e_att)) * A_i -> R_i = C(f_i * A_i, Dow(e_{att}));
 - [2020/08/15] Optimizing the testing code, now you can test the custom data without `gt_path`
 - [2020/05/15] Our paper is accepted for publication in IEEE TMI
@@ -35,38 +34,38 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 ### 0.2. Table of Contents
 
-- [Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Images](#inf-net--automatic-covid-19-lung-infection-segmentation-from-ct-scans)
-  * [0. Preface](#0-preface)
-    + [0.1. :fire: NEWS :fire:](#01--fire--news--fire-)
-    + [0.2. Table of Contents](#02-table-of-contents)
-  * [1. Introduction](#1-introduction)
-    + [1.1. Task Description](#11-task-description)
-  * [2. Proposed Methods](#2-proposed-methods)
-    + [2.1. Inf-Net](#21-inf-net)
+- [Inf-Net: Automatic COVID-19 Lung Infection Segmentation from CT Images](#inf-net-automatic-covid-19-lung-infection-segmentation-from-ct-images)
+  - [0. Preface](#0-preface)
+    - [0.1. :fire: NEWS :fire:](#01-fire-news-fire)
+    - [0.2. Table of Contents](#02-table-of-contents)
+  - [1. Introduction](#1-introduction)
+    - [1.1. Task Descriptions](#11-task-descriptions)
+  - [2. Proposed Methods](#2-proposed-methods)
+    - [2.1. Inf-Net](#21-inf-net)
       - [2.1.1 Overview](#211-overview)
       - [2.1.2. Usage](#212-usage)
-    + [2.2. Semi-Inf-Net](#22-semi-inf-net)
+    - [2.2. Semi-Inf-Net](#22-semi-inf-net)
       - [2.2.1. Overview](#221-overview)
       - [2.2.2. Usage](#222-usage)
-    + [2.3. Semi-Inf-Net + Multi-class UNet](#23-semi-inf-net---multi-class-unet)
+    - [2.3. Semi-Inf-Net + Multi-class UNet](#23-semi-inf-net--multi-class-unet)
       - [2.3.1. Overview](#231-overview)
       - [2.3.2. Usage](#232-usage)
-  * [3. Evaluation Toolbox](#3-evaluation-toolbox)
-    + [3.1. Introduction](#31-introduction)
-    + [3.2. Usage](#32-usage)
-  * [4. COVID-SemiSeg Dataset](#4-covid-semiseg-dataset)
-    + [3.1. Training set](#31-training-set)
-    + [3.2. Testing set](#32-testing-set)
-  * [4. Results](#4-results)
-    + [4.1. Download link:](#41-download-link-)
-  * [5. Visualization Results:](#5-visualization-results-)
-  * [6. Paper list of COVID-19 related (Update continue)](#6-paper-list-of-covid-19-related--update-continue-)
-  * [7. Manuscript](#7-manuscript)
-  * [8. Citation](#8-citation)
-  * [9. LICENSE](#9-license)
-  * [10. Acknowledgements](#10-acknowledgements)
-  * [11. TODO LIST](#11-todo-list)
-  * [12. FAQ](#12-faq)
+  - [3. Evaluation Toolbox](#3-evaluation-toolbox)
+    - [3.1. Introduction](#31-introduction)
+    - [3.2. Usage](#32-usage)
+  - [4. COVID-SemiSeg Dataset](#4-covid-semiseg-dataset)
+    - [3.1. Training set](#31-training-set)
+    - [3.2. Testing set](#32-testing-set)
+  - [4. Results](#4-results)
+    - [4.1. Download link:](#41-download-link)
+  - [5. Visualization Results:](#5-visualization-results)
+  - [6. Paper list of COVID-19 related (Update continue)](#6-paper-list-of-covid-19-related-update-continue)
+  - [7. Manuscript](#7-manuscript)
+  - [8. Citation](#8-citation)
+  - [9. LICENSE](#9-license)
+  - [10. Acknowledgements](#10-acknowledgements)
+  - [11. TODO LIST](#11-todo-list)
+  - [12. FAQ](#12-faq)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -162,7 +161,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
 
 #### 2.2.2. Usage
 
-1. Data Preparation for pseudo-label generation. (Optional)
+1. Data Preparation for a pseudo-label generation. (Optional)
     
     - Dividing the 1600 unlabeled image into 320 groups (1600/K groups, we set K=5 in our implementation), 
     in which images with `*.jpg` format can be found in `./Dataset/TrainingSet/LungInfection-Train/Pseudo-label/Imgs/`. 
@@ -187,7 +186,7 @@ Inf-Net or evaluation toolbox for your research, please cite this paper ([BibTeX
      (`--is_pseudo=True`) in the parser of `MyTrain_LungInf.py` and modify the path of training data to the pseudo-label 
      repository (`--train_path='Dataset/TrainingSet/LungInfection-Train/Pseudo-label'`). Just run it!
     
-    - When training is completed, the weights (trained on pseudo-label) will be saved in `./Snapshots/save_weights/Inf-Net_Pseduo/Inf-Net_pseudo_100.pth`. Also, you can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=1NMM0BoVJU9DS8u4yTG0L-V_mcHKajrmN). Now we have prepared the weights that is pre-trained on 1600 images with pseudo labels. Please note that these valuable images/labels can promote the performance and the stability of training process, because of ImageNet pre-trained models are just design for general object classification/detection/segmentation tasks initially.
+    - When training is completed, the weights (trained on pseudo-label) will be saved in `./Snapshots/save_weights/Inf-Net_Pseduo/Inf-Net_pseudo_100.pth`. Also, you can directly download the pre-trained weights from [Google Drive](https://drive.google.com/open?id=1NMM0BoVJU9DS8u4yTG0L-V_mcHKajrmN). Now we have prepared the weights that is pre-trained on 1600 images with pseudo labels. Please note that these valuable images/labels can promote the performance and the stability of the training process, because of ImageNet pre-trained models are just designed for general object classification/detection/segmentation tasks initially.
     
     - Secondly, turn on the semi-supervised mode (`--is_semi=True`) and turn off the flag of whether using pseudo labels
      (`--is_pseudo=False`) in the parser of `MyTrain_LungInf.py` and modify the path of training data to the doctor-label (50 images)
@@ -236,7 +235,7 @@ More details can be found in our paper.
 
 ### 3.1. Introduction
 
-We provide one-key evaluation toolbox for LungInfection Segmentation tasks, including Lung-Infection and Multi-Class-Infection. 
+We provide a one-key evaluation toolbox for LungInfection Segmentation tasks, including Lung-Infection and Multi-Class-Infection. 
 Please download the evaluation toolbox [Google Drive](https://drive.google.com/open?id=1BGUUmrRPOWPxdxnawFnG9TVZd8rwLqCF).
 
 ### 3.2. Usage
@@ -270,7 +269,7 @@ labels (Prior) generated by our Semi-Inf-Net model. [Download Link](http://dpfan
 
 ### 3.2. Testing set
 
-1. The Lung infection segmentation set contains 48 images associate with 48 GT. [Download Link](http://dpfan.net/wp-content/uploads/LungInfection-Test.zip).
+1. The Lung infection segmentation set contains 48 images associated with 48 GT. [Download Link](http://dpfan.net/wp-content/uploads/LungInfection-Test.zip).
 
 1. The Multi-Class lung infection segmentation set has 48 images and 48 GT. [Download Link](http://dpfan.net/wp-content/uploads/MultiClassInfection-Test.zip).
 
@@ -282,11 +281,11 @@ labels (Prior) generated by our Semi-Inf-Net model. [Download Link](http://dpfan
 ## 4. Results
 
 To compare the infection regions segmentation performance, we consider the two state-of-the-art models U-Net and U-Net++. 
-We also show the multi-class infection labelling results in Fig. 5. As can be observed, 
+We also show the multi-class infection labeling results in Fig. 5. As can be observed, 
 our model, Semi-Inf-Net & FCN8s, consistently performs the best among all methods. It is worth noting that both GGO and 
 consolidation infections are accurately segmented by Semi-Inf-Net & FCN8s, which further demonstrates the advantage of 
 our model. In contrast, the baseline methods, DeepLabV3+ with different strides and FCNs, all obtain unsatisfactory 
-results, where neither GGO and consolidation infections can be accurately segmented.
+results, where neither GGO nor consolidation infections can be accurately segmented.
 
 ### 4.1. Download link:
 
@@ -351,7 +350,7 @@ or any Content, or any work product or data derived therefrom, for commercial pu
 
 ## 10. Acknowledgements
  
-We would like to thank the whole organizing committee for considering the publication of our paper in this special issue (Special Issue on Imaging-Based Diagnosis of COVID-19) of IEEE Transactions on Medical Imaging. More papers refer to [Link](https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=9153182).
+We would like to thank the whole organizing committee for considering the publication of our paper in this special issue (Special Issue on Imaging-Based Diagnosis of COVID-19) of IEEE Transactions on Medical Imaging. For more papers refer to [Link](https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=9153182).
 
 ## 11. TODO LIST
 
@@ -379,12 +378,12 @@ etc.)
 
 ## 12. FAQ
 
-1. If the image cannot be loaded in the page (mostly in the domestic network situations).
+1. If the image cannot be loaded on the page (mostly in domestic network situations).
 
     [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
 
-2. I tested the U-Net, however, the Dice score is different from the score in TABLE II (Page 8 on our manuscript)? <br>
-   Note that, the our Dice score is the mean dice score rather than the max Dice score. You can use our evaluation tool box [Google Drive](https://drive.google.com/open?id=1BGUUmrRPOWPxdxnawFnG9TVZd8rwLqCF). 
-   The training set of each compared model (e.g., U-Net, Attention-UNet, Gated-UNet, Dense-UNet, U-Net++, Inf-Net (ours)) is the 48 images rather than 48 image+1600 images.
+2. I tested the U-Net, however, the Dice score is different from the score in TABLE II (Page 8 of our manuscript). <br>
+   Note that, our Dice score is the mean dice score rather than the max Dice score. You can use our evaluation toolbox [Google Drive](https://drive.google.com/open?id=1BGUUmrRPOWPxdxnawFnG9TVZd8rwLqCF). 
+   The training set of each compared model (e.g., U-Net, Attention-UNet, Gated-UNet, Dense-UNet, U-Net++, Inf-Net (ours)) is 48 images rather than 48 images + 1600 images.
 
 **[⬆ back to top](#0-preface)**
